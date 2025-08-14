@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thank You – Earnbasis</title>
+  <meta name="description" content="Thank you for your purchase! Download your Forex Day Trading Cheat Sheet here." />
+  <style>
+    :root{
+      --bg:#0b0d12;--card:#121520;--text:#e9eefc;--muted:#aeb9d7;
+      --accent:#7dd3fc;--accent2:#a78bfa
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;display:flex;align-items:center;justify-content:center;
+      background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      min-height:100vh;padding:20px
+    }
+    .card{
+      background:linear-gradient(180deg,#141826,#0d111b);
+      border:1px solid #1f2740;border-radius:16px;
+      padding:24px;max-width:500px;width:100%;text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    h1{margin-top:0;font-size:clamp(26px,4vw,34px)}
+    p{color:var(--muted)}
+    a.btn{
+      display:inline-block;margin-top:20px;
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      color:#091018;padding:12px 18px;border-radius:10px;font-weight:800;
+      text-decoration:none
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Thank you for your purchase! 🎉</h1>
+    <p>Your order is complete. Click the button below to download your <strong>Forex Day Trading Cheat Sheet</strong>.</p>
+    <a class="btn" href="/downloads/forex-day-trading-cheat-sheet.pdf" download>📥 Download Now</a>
+    <p style="margin-top:20px;font-size:14px;color:var(--muted)">Having trouble? Contact us at support@earnbasis.com</p>
+  </div>
+</body>
+</html>
