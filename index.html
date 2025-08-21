@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Earnbasis — Daily Micro Assets</title>
-  <meta name="description" content="Earnbasis builds one or two micro assets per day. Fast, simple, profitable. Explore the library and new drops." />
+  <title>EarnBasis — Daily Trading Cheat Sheets & Micro-Assets</title>
+  <meta name="description" content="Daily cheat sheets and micro-assets for crypto, forex, and AI trading in 2025. Unlock expert strategies for €2-€5 at EarnBasis.com!" />
+  <meta name="keywords" content="crypto cheat sheet, forex trading guide, AI trading strategies, tokenized assets 2025, micro-assets" />
+  <meta name="author" content="EarnBasis" />
   <link rel="canonical" href="https://earnbasis.com/" />
   <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="Earnbasis — Daily Micro Assets" />
-  <meta property="og:description" content="One or two new assets per day. Explore and deploy." />
+  <meta property="og:title" content="EarnBasis — Daily Trading Cheat Sheets & Micro-Assets" />
+  <meta property="og:description" content="New crypto, forex, and AI trading assets daily. Expert guides for €2-€5. Start trading smarter now!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://earnbasis.com/" />
+  <!-- Google Analytics (optioneel, vervang UA-XXXXX-Y) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-Y');
+  </script>
   <style>
     :root{
       --bg:#0b0d12;--card:#121520;--text:#e9eefc;--muted:#aeb9d7;
@@ -63,6 +73,7 @@
       display:flex;flex-direction:column;gap:10px;
       box-shadow:0 10px 30px rgba(0,0,0,.25)
     }
+    .card img { max-width: 100%; height: auto; }
     .card h3{margin:2px 0 0;font-size:18px}
     .tag{font-size:12px;color:#9fb2e3}
     form{display:flex;gap:8px;margin-top:10px}
@@ -76,62 +87,68 @@
 <body>
 <header>
   <div class="container bar">
-    <a class="logo" href="/" aria-label="Earnbasis home">
-      <img src="/images/earnbasis_logo.png" alt="Earnbasis logo" />
+    <a class="logo" href="/" aria-label="EarnBasis home">
+      <img src="/images/earnbasis_logo.png" alt="EarnBasis logo" />
     </a>
-    <a class="badge" href="#drops" aria-label="Jump to latest drops">New daily</a>
+    <a class="badge" href="#drops" aria-label="Jump to latest drops">New Daily Drops</a>
   </div>
 </header>
 
 <main class="container">
   <section class="hero" aria-labelledby="headline">
-    <h1 id="headline">Daily Micro Assets — built fast, shipped faster</h1>
+    <h1 id="headline">Daily Cheat Sheets for Smarter Trading</h1>
     <p class="muted">
-      We ship 1–2 simple, useful assets per day. Everything lives under one domain for speed & SEO.
-      Browse, clone, sell, repeat.
+      Unlock expert crypto, forex, and AI trading strategies with 1-2 new cheat sheets and micro-assets daily. Priced at €2-€5, built for traders, by traders.
     </p>
     <div class="cta">
-      <a class="btn" href="#drops">Explore assets</a>
-      <a class="btn-outline" href="/forex-cheatsheet/">Today’s drop</a>
+      <a class="btn" href="#drops">Explore Our Library</a>
+      <a class="btn-outline" href="/crypto/ai-trading">Today’s Drop: AI Crypto Trading</a>
     </div>
   </section>
 
   <section id="drops" aria-labelledby="drops-title">
-    <h2 id="drops-title" class="muted">Live assets</h2>
+    <h2 id="drops-title" class="muted">Latest Trading Assets</h2>
     <div class="grid">
       <article class="card">
         <div class="tag">#001</div>
-        <h3>Forex Day Trading Cheat Sheet (2025)</h3>
-        <p class="muted">Deep, actionable reference with entries, exits, risk rules, and setups. Built for day traders.</p>
-        <a class="btn" href="/forex-cheatsheet/">Open</a>
+        <img src="/crypto/ai-trading/crypto-ai-trading-thumbnail.jpg" alt="AI-Powered Crypto Trading Cheat Sheet">
+        <h3>AI-Powered Crypto Trading 2025</h3>
+        <p class="muted">Master crypto markets with top AI tools and strategies for 2025.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_AI">
+          <input type="hidden" name="return" value="https://earnbasis.com/crypto/ai-trading/download">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - Buy AI Crypto Trading Cheat Sheet">
+        </form>
       </article>
-
-      <!-- TEMPLATE CARD for next assets — duplicate and edit link/title
       <article class="card">
         <div class="tag">#002</div>
-        <h3>Crypto Position Size Calculator</h3>
-        <p class="muted">Instant position sizing with risk %, SL distance and fees.</p>
-        <a class="btn" href="/crypto-calculator/">Open</a>
+        <img src="/forex/risk-management/forex-risk-management-thumbnail.jpg" alt="Forex Risk Management Cheat Sheet">
+        <h3>Forex Risk Management Basics</h3>
+        <p class="muted">Protect your capital with proven stop-loss and position sizing techniques.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_FOREX">
+          <input type="hidden" name="return" value="https://earnbasis.com/forex/risk-management/download">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - Buy Forex Risk Management Cheat Sheet">
+        </form>
       </article>
-      -->
     </div>
   </section>
 
   <section style="margin-top:40px" aria-labelledby="sub-title">
-    <h2 id="sub-title" class="muted">Get drops by email</h2>
-    <p class="muted">One message per day. No noise.</p>
-    <!-- Netlify form (works automatically after deploy) -->
-    <form name="newsletter" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="newsletter">
+    <h2 id="sub-title" class="muted">Get New Drops by Email</h2>
+    <p class="muted">One daily email with our latest cheat sheets. No spam, just value.</p>
+    <form action="YOUR_MAILCHIMP_FORM_ACTION_URL" method="POST">
       <label class="sr-only" for="email">Email</label>
-      <input id="email" type="email" name="email" placeholder="you@domain.com" required />
+      <input id="email" type="email" name="EMAIL" placeholder="you@domain.com" required />
       <button class="btn" type="submit">Subscribe</button>
     </form>
   </section>
 </main>
 
 <footer class="container">
-  © <span id="y"></span> Earnbasis — daily micro assets.
+  © <span id="y"></span> EarnBasis — Daily Cheat Sheets & Micro-Assets for Traders
 </footer>
 
 <script>
