@@ -1,0 +1,20 @@
+# Ignore macOS systeemfiles
+.DS_Store
+
+# Ignore Windows thumbnail cache
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore local backups or temporary files
+*~
+*.bak
+
+# Ignore sensitive files (bijv. API keys of credentials)
+*.env
+
+# Ignore build artifacts (als je later een build-stap toevoegt)
+dist/
+build/
+replacements.txt
