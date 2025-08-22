@@ -17,4 +17,4 @@ Thumbs.db
 # Ignore build artifacts (als je later een build-stap toevoegt)
 dist/
 build/
-node_modules/
+node_modules/replacements.txt
