@@ -73,14 +73,15 @@
       display:flex;flex-direction:column;gap:10px;
       box-shadow:0 10px 30px rgba(0,0,0,.25)
     }
-    .card img { max-width: 100%; height: auto; }
+    .card .emoji { 
+      font-size: 3rem; 
+      margin-bottom: 10px; 
+      color: var(--accent); 
+    }
     .card h3{margin:2px 0 0;font-size:18px}
     .tag{font-size:12px;color:#9fb2e3}
-    form{display:flex;gap:8px;margin-top:10px}
-    input[type=email]{
-      flex:1;border:1px solid #2a3557;background:#0f1424;color:#e8eeff;
-      border-radius:10px;padding:10px
-    }
+    .pp-CDQ39XVK5Q3EY{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}
+    .pp-6XE47HBVC9BSW{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}
     footer{color:#8fa0c8;padding:24px 0 80px}
   </style>
 </head>
@@ -102,7 +103,7 @@
     </p>
     <div class="cta">
       <a class="btn" href="#drops">Explore Our Library</a>
-      <a class="btn-outline" href="/crypto/ai-trading">Today’s Drop: AI Crypto Trading</a>
+      <a class="btn-outline" href="/assets/crypto-ai-trading">Today’s Drop: AI Crypto Trading</a>
     </div>
   </section>
 
@@ -111,41 +112,60 @@
     <div class="grid">
       <article class="card">
         <div class="tag">#001</div>
-        <img src="/crypto/ai-trading/crypto-ai-trading-thumbnail.jpg" alt="AI-Powered Crypto Trading Cheat Sheet">
+        <div class="emoji">💰🤖</div>
         <h3>AI-Powered Crypto Trading 2025</h3>
         <p class="muted">Master crypto markets with top AI tools and strategies for 2025.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_AI">
-          <input type="hidden" name="return" value="https://earnbasis.com/crypto/ai-trading/download">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - Buy AI Crypto Trading Cheat Sheet">
+        <form action="https://www.paypal.com/ncp/payment/CDQ39XVK5Q3EY" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+          <input class="pp-CDQ39XVK5Q3EY" type="submit" value="Buy Now" />
+          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+          <section style="font-size: 0.75rem;">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
         </form>
       </article>
       <article class="card">
         <div class="tag">#002</div>
-        <img src="/forex/risk-management/forex-risk-management-thumbnail.jpg" alt="Forex Risk Management Cheat Sheet">
+        <div class="emoji">💹🛡️</div>
         <h3>Forex Risk Management Basics</h3>
         <p class="muted">Protect your capital with proven stop-loss and position sizing techniques.</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_FOREX">
-          <input type="hidden" name="return" value="https://earnbasis.com/forex/risk-management/download">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - Buy Forex Risk Management Cheat Sheet">
+        <form action="https://www.paypal.com/ncp/payment/6XE47HBVC9BSW" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+          <input class="pp-6XE47HBVC9BSW" type="submit" value="Buy Now" />
+          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+          <section style="font-size: 0.75rem;">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
         </form>
       </article>
     </div>
   </section>
 
   <section style="margin-top:40px" aria-labelledby="sub-title">
-    <h2 id="sub-title" class="muted">Get New Drops by Email</h2>
-    <p class="muted">One daily email with our latest cheat sheets. No spam, just value.</p>
-    <form action="YOUR_MAILCHIMP_FORM_ACTION_URL" method="POST">
-      <label class="sr-only" for="email">Email</label>
-      <input id="email" type="email" name="EMAIL" placeholder="you@domain.com" required />
-      <button class="btn" type="submit">Subscribe</button>
-    </form>
-  </section>
-</main>
+  <h2 id="sub-title" class="muted">Get New Drops by Email</h2>
+  <p class="muted">One daily email with our latest cheat sheets. No spam, just value.</p>
+  <form action="https://earnbasis.com/subscribe" method="POST" onsubmit="subscribeBrevo(event)">
+    <label class="sr-only" for="email">Email</label>
+    <input id="email" type="email" name="EMAIL" placeholder="you@domain.com" required />
+    <button class="btn" type="submit">Subscribe</button>
+  </form>
+  <script>
+    function subscribeBrevo(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'api-key': 'REDACTED' // Vervang dit met je echte Brevo API-key
+        },
+        body: JSON.stringify({
+          email: email,
+          attributes: { LIST: 'Daily Drops' },
+          listIds: [5] // Vervang dit met je echte List ID
+        })
+      }).then(response => {
+        if (response.ok) alert("Subscribed! Check your inbox.");
+        else alert("Subscription failed. Try again.");
+      }).catch(() => alert("Subscription failed. Try again."));
+    }
+  </script>
+</section>
 
 <footer class="container">
   © <span id="y"></span> EarnBasis — Daily Cheat Sheets & Micro-Assets for Traders
@@ -154,5 +174,3 @@
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
 </script>
-</body>
-</html>
