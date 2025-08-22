@@ -25,16 +25,26 @@
   </script>
 
   <style>
-    :root{--bg:#0b0d12;--card:#121520;--text:#e9eefc;--muted:#aeb9d7;--accent:#7dd3fc;--accent2:#a78bfa;--border:#1f2740}
-    *{box-sizing:border-box} html,body{height:100%}
-    body{margin:0;color:var(--text);
-      background:radial-gradient(1200px 600px at 20% -10%,#101423,transparent),
-                 radial-gradient(900px 400px at 110% 10%,#0f1530,transparent),var(--bg);
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    :root{
+      --bg:#0b0d12;--card:#121520;--text:#e9eefc;--muted:#aeb9d7;
+      --accent:#7dd3fc;--accent2:#a78bfa;--border:#1f2740
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% -10%,#101423,transparent),
+        radial-gradient(900px 400px at 110% 10%,#0f1530,transparent),
+        var(--bg);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial
+    }
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);
+    header{
+      position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);
       background:linear-gradient(180deg,rgba(10,12,18,.75),rgba(10,12,18,.35));
-      border-bottom:1px solid rgba(32,40,68,.35);z-index:10}
+      border-bottom:1px solid rgba(32,40,68,.35);z-index:10
+    }
     .bar{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
     .logo{display:flex;align-items:center;gap:10px}
     .logo img{height:36px;width:auto;display:block}
@@ -48,11 +58,18 @@
     .btn{display:inline-block;text-decoration:none;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#091018;padding:10px 14px;border-radius:10px;font-weight:800}
     .btn-outline{border:1px solid #32406b;padding:9px 13px;border-radius:10px;color:var(--text);text-decoration:none}
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-    .card{background:linear-gradient(180deg,#141826,#0d111b);border:1px solid var(--border);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-    .card .emoji{font-size:3rem;margin-bottom:10px;color:var(--accent)}
-    .card h3{margin:2px 0 0;font-size:18px}
+    .card{
+      background:linear-gradient(180deg,#141826,#0d111b);
+      border:1px solid var(--border); border-radius:16px; padding:18px;
+      display:flex;flex-direction:column;gap:12px;box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    .card .emoji{font-size:2.2rem}
+    .card h3{margin:0;font-size:18px}
     .tag{font-size:12px;color:#9fb2e3}
+    .actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
     .pp{border:none;border-radius:.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background:#FFD140;color:#000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer}
+    .link{color:#9fd0ff;text-decoration:none}
+    .link:hover{text-decoration:underline}
     footer{color:#8fa0c8;padding:24px 0 80px}
     form.subscribe{display:flex;gap:8px;flex-wrap:wrap}
     form.subscribe input[type=email]{flex:1;border:1px solid #2a3557;background:#0f1424;color:#e8eeff;border-radius:10px;padding:10px}
@@ -74,7 +91,8 @@
     <p class="muted">Unlock expert crypto & forex strategies with 1–2 new cheat sheets and micro-assets daily. €2–€5 per drop.</p>
     <div class="cta">
       <a class="btn" href="#drops">Explore Our Library</a>
-      <a class="btn-outline" href="/assets/crypto-ai-trading">Today’s Drop: AI Crypto Trading</a>
+      <!-- Header quick link to the current featured asset page -->
+      <a class="btn-outline" href="/crypto/ai-trading">Today’s Drop: AI Crypto Trading</a>
     </div>
   </section>
 
@@ -82,34 +100,92 @@
     <h2 id="drops-title" class="muted">Latest Trading Assets</h2>
 
     <div class="grid">
-      <!-- Drop 1 -->
+      <!-- === DROP #001: AI-Powered Crypto Trading 2025 === -->
       <article class="card" aria-labelledby="ai-drop-title">
         <div class="tag">#001</div>
         <div class="emoji" aria-hidden="true">💰🤖</div>
-        <h3 id="ai-drop-title">AI-Powered Crypto Trading 2025</h3>
+
+        <!-- Title links to the asset page (more info) -->
+        <h3 id="ai-drop-title">
+          <a class="link" href="/crypto/ai-trading" aria-label="Open AI-Powered Crypto Trading 2025 details">
+            AI-Powered Crypto Trading 2025
+          </a>
+        </h3>
+
         <p class="muted">Master crypto markets with the top AI tools and strategies for 2025.</p>
 
-        <!-- PayPal Smart Link -->
-        <form action="https://www.paypal.com/ncp/payment/CDQ39XVK5Q3EY" method="get" target="_blank" rel="noopener" style="display:inline-grid;justify-items:center;align-content:start;gap:.5rem">
-          <input class="pp" type="submit" value="Buy Now" aria-label="Buy AI-Powered Crypto Trading 2025"/>
-          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Pay with card or PayPal"/>
-          <small>Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:.875rem;vertical-align:middle"/></small>
-        </form>
+        <div class="actions">
+          <!-- BUY NOW → direct to PayPal NCP link -->
+          <form action="https://www.paypal.com/ncp/payment/CDQ39XVK5Q3EY"
+                method="get" target="_blank" rel="noopener"
+                aria-label="Buy AI-Powered Crypto Trading 2025">
+            <input class="pp" type="submit" value="Buy Now" />
+          </form>
+
+          <!-- Learn more → asset index -->
+          <a class="link" href="/crypto/ai-trading" aria-label="Learn more about AI-Powered Crypto Trading 2025">
+            Learn more →
+          </a>
+        </div>
+
+        <small>
+          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Pay with card or PayPal" />
+          <span class="muted">Powered by PayPal</span>
+        </small>
       </article>
 
-      <!-- Drop 2 -->
+      <!-- === DROP #002: Forex Risk Management Basics === -->
       <article class="card" aria-labelledby="fx-drop-title">
         <div class="tag">#002</div>
         <div class="emoji" aria-hidden="true">💹🛡️</div>
-        <h3 id="fx-drop-title">Forex Risk Management Basics</h3>
+
+        <!-- Title links to the asset page (more info) -->
+        <h3 id="fx-drop-title">
+          <a class="link" href="/forex/risk-management" aria-label="Open Forex Risk Management Basics details">
+            Forex Risk Management Basics
+          </a>
+        </h3>
+
         <p class="muted">Protect your capital with proven stop-loss and position sizing techniques.</p>
 
-        <form action="https://www.paypal.com/ncp/payment/6XE47HBVC9BSW" method="get" target="_blank" rel="noopener" style="display:inline-grid;justify-items:center;align-content:start;gap:.5rem">
-          <input class="pp" type="submit" value="Buy Now" aria-label="Buy Forex Risk Management Basics"/>
-          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Pay with card or PayPal"/>
-          <small>Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:.875rem;vertical-align:middle"/></small>
-        </form>
+        <div class="actions">
+          <!-- BUY NOW → direct to PayPal NCP link -->
+          <form action="https://www.paypal.com/ncp/payment/6XE47HBVC9BSW"
+                method="get" target="_blank" rel="noopener"
+                aria-label="Buy Forex Risk Management Basics">
+            <input class="pp" type="submit" value="Buy Now" />
+          </form>
+
+          <!-- Learn more → asset index -->
+          <a class="link" href="/forex/risk-management" aria-label="Learn more about Forex Risk Management Basics">
+            Learn more →
+          </a>
+        </div>
+
+        <small>
+          <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Pay with card or PayPal" />
+          <span class="muted">Powered by PayPal</span>
+        </small>
       </article>
+
+      <!-- === TEMPLATE for future drops ===
+      <article class="card" aria-labelledby="DROP_ID-title">
+        <div class="tag">#00X</div>
+        <div class="emoji" aria-hidden="true">📘</div>
+        <h3 id="DROP_ID-title">
+          <a class="link" href="/CATEGORY/SLUG">Title of the Drop</a>
+        </h3>
+        <p class="muted">One-liner description of the asset.</p>
+        <div class="actions">
+          <form action="https://www.paypal.com/ncp/payment/YOUR_CODE" method="get" target="_blank" rel="noopener">
+            <input class="pp" type="submit" value="Buy Now" />
+          </form>
+          <a class="link" href="/CATEGORY/SLUG">Learn more →</a>
+        </div>
+        <small><img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Pay with card or PayPal" />
+        <span class="muted">Powered by PayPal</span></small>
+      </article>
+      -->
     </div>
   </section>
 
