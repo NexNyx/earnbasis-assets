@@ -1,183 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EarnBasis — All Trading Drops</title>
-  <meta name="description" content="Browse all EarnBasis daily cheat sheets and micro-assets for crypto & forex. Pay once, download instantly." />
-  <link rel="canonical" href="https://earnbasis.com/drops/" />
+  <title>🔥 Trading Assets & Cheat Sheets | EarnBasis</title>
+  <meta name="description" content="Explore our most powerful micro-assets, designed for traders who want an edge. Download trading tools, strategies, and AI cheat sheets." />
   <meta name="robots" content="index,follow" />
   <style>
-    :root {
-      --bg: #0b0d12; --card: #121520; --text: #e9eefc; --muted: #aeb9d7;
-      --accent: #7dd3fc; --accent2: #a78bfa; --border: #1f2740;
-      --buy1: #22d3ee; --buy2: #a78bfa; --buyTxt: #08111a;
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: #0b0d12;
+      font-family: system-ui, sans-serif;
+      color: #e9eefc;
     }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; font: 16px/1.6 system-ui, Inter, sans-serif; background: var(--bg); color: var(--text); }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-
-    header { padding: 24px 0; border-bottom: 1px solid #2a3557; display: flex; align-items: center; justify-content: space-between; }
-    h1 { font-size: clamp(26px, 4vw, 42px); margin: 0 0 10px; }
-    h2 { font-size: 22px; margin-top: 40px; color: var(--muted); }
-
-    .logo { height: 40px; }
-
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
     }
     .card {
-      background: linear-gradient(180deg, #141826, #0d111b);
-      border: 1px solid var(--border);
+      background: #161a23;
+      border: 1px solid #1f2740;
       border-radius: 16px;
-      padding: 18px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      justify-content: space-between;
+      transition: all 0.2s ease;
     }
-    .card h3 { margin: 0; font-size: 18px; }
-    .card .emoji { font-size: 2rem; }
-    .muted { color: var(--muted); }
-    .tag { font-size: 12px; color: #9fb2e3; }
-
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
-    .link { color: #9fd0ff; text-decoration: none; }
-    .link:hover { text-decoration: underline; }
-
-    .btn-buy {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: linear-gradient(90deg, var(--buy1), var(--buy2));
-      color: var(--buyTxt);
-      text-decoration: none;
-      padding: 10px 14px;
-      border-radius: 12px;
-      font-weight: 900;
-      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     }
-    .btn-buy:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(124, 58, 237, 0.35); }
-    .btn-buy small { opacity: 0.85; font-weight: 700; }
-
-    footer { margin-top: 80px; padding: 30px 0; color: #8fa0c8; border-top: 1px solid #2a3557; }
-
-    .referral {
-      margin-top: 60px;
-      padding: 30px 0;
-      border-top: 1px solid #2a3557;
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .price {
+      font-weight: bold;
+      color: #a78bfa;
+    }
+    .actions {
+      margin-top: 16px;
     }
     .btn {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color: #091018;
-      padding: 10px 16px;
-      border-radius: 10px;
-      font-weight: 800;
-      text-decoration: none;
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: linear-gradient(90deg, #22d3ee, #a78bfa);
+      color: #0b0d12;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .note {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aeb9d7;
     }
   </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <img src="/images/earnbasis-logo.png" alt="EarnBasis Logo" class="logo">
-      <div>
-        <h1>📚 All Trading Cheat Sheets</h1>
-        <p class="muted">Pay once. Download forever. New drops added daily.</p>
-      </div>
-    </header>
-
+  <div class="container">
+    <h1>🔥 EarnBasis Micro Assets</h1>
     <div class="grid">
-      <!-- Kaarten worden automatisch gegenereerd -->
-      <!-- Deze 6 assets zijn hardcoded -->
 
-      <article class="card">
-        <div class="tag">#001</div>
-        <div class="emoji">🛡️📉</div>
-        <h3><a class="link" href="/assets/001-forex-risk-management">Forex Risk Management Basics</a></h3>
-        <p class="muted">Protect your capital with stop-loss & position sizing formulas.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/6XE47HBVC9BSW" target="_blank"><span>Buy Now</span><small>€5</small></a>
-          <a class="link" href="/assets/001-forex-risk-management">Learn more →</a>
+      <!-- 001 -->
+      <div class="card">
+        <img src="/images/forex-risk.jpg" alt="Forex Risk Management" />
+        <div class="card-content">
+          <h2>001 – Forex Risk Management</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/001-forex-risk-management" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/6XE47HBVC9BSW" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <article class="card">
-        <div class="tag">#002</div>
-        <div class="emoji">🤖💰</div>
-        <h3><a class="link" href="/assets/002-crypto-ai-trading">AI-Powered Crypto Trading 2025</a></h3>
-        <p class="muted">Prompts & workflows for finding, confirming & journaling trades.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/CDQ39XVK5Q3EY" target="_blank"><span>Buy Now</span><small>€5</small></a>
-          <a class="link" href="/assets/002-crypto-ai-trading">Learn more →</a>
+      <!-- 002 -->
+      <div class="card">
+        <img src="/images/ai-crypto.jpg" alt="AI Crypto Trading" />
+        <div class="card-content">
+          <h2>002 – AI Crypto Trading</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/002-ai-trading" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/CDQ39XVK5Q3EY" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <article class="card">
-        <div class="tag">#003</div>
-        <div class="emoji">⚡📈</div>
-        <h3><a class="link" href="/assets/003-bitcoin-scalping">Bitcoin Scalping Strategies 2025</a></h3>
-        <p class="muted">Fast 1–5 min trades with tight risk control and clear entries.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8" target="_blank"><span>Buy Now</span><small>€5</small></a>
-          <a class="link" href="/assets/003-bitcoin-scalping">Learn more →</a>
+      <!-- 003 -->
+      <div class="card">
+        <img src="/images/btc-scalp.jpg" alt="BTC Scalping" />
+        <div class="card-content">
+          <h2>003 – BTC Scalping Strategy</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/003-btc-scalping" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <article class="card">
-        <div class="tag">#004</div>
-        <div class="emoji">🌱🟣</div>
-        <h3><a class="link" href="/assets/004-ethereum-yield-farming">Ethereum Yield Farming</a></h3>
-        <p class="muted">Step-by-step ETH yield farming starter asset. Simple & effective.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/XQMZ8M83XXPSS" target="_blank"><span>Buy Now</span><small>€2</small></a>
-          <a class="link" href="/assets/004-ethereum-yield-farming">Learn more →</a>
+      <!-- 004 -->
+      <div class="card">
+        <img src="/images/eth-yield.jpg" alt="ETH Yield Farming" />
+        <div class="card-content">
+          <h2>004 – Ethereum Yield Farming</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/004-ethereum-yield-farming" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/XQMZ8M83XXPSS" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <article class="card">
-        <div class="tag">#005</div>
-        <div class="emoji">🌇⚡</div>
-        <h3><a class="link" href="/assets/005-london-breakout">London Breakout Strategy 2025</a></h3>
-        <p class="muted">Exploit London open volatility with clean breakout setups.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/95V29MYYYZ3L6" target="_blank"><span>Buy Now</span><small>€5</small></a>
-          <a class="link" href="/assets/005-london-breakout">Learn more →</a>
+      <!-- 005 -->
+      <div class="card">
+        <img src="/images/london-breakout.jpg" alt="London Breakout" />
+        <div class="card-content">
+          <h2>005 – London Breakout Strategy</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/005-london-breakout" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/95V29MYYYZ3L6" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <article class="card">
-        <div class="tag">#006</div>
-        <div class="emoji">🥇📊</div>
-        <h3><a class="link" href="/assets/006-gold-day-trading-map">Gold Day Trading Map</a></h3>
-        <p class="muted">XAUUSD intraday structure, timing windows, and key levels.</p>
-        <div class="actions">
-          <a class="btn-buy" href="https://www.paypal.com/ncp/payment/9XWZJF6WZCJWU" target="_blank"><span>Buy Now</span><small>€5</small></a>
-          <a class="link" href="/assets/006-gold-day-trading-map">Learn more →</a>
+      <!-- 006 -->
+      <div class="card">
+        <img src="/images/gold-day.jpg" alt="Gold Day Map" />
+        <div class="card-content">
+          <h2>006 – Gold Day Map</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/006-gold-day-map" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/9XWZJF6WZCJWU" class="btn">💸 Buy Now</a>
+          </div>
         </div>
-      </article>
+      </div>
+
+      <!-- 007 -->
+      <div class="card">
+        <img src="/images/ai-crypto-bot.jpg" alt="AI Crypto Trading Bots" />
+        <div class="card-content">
+          <h2>007 – AI Crypto Trading Bots</h2>
+          <p class="price">€5</p>
+          <div class="actions">
+            <a href="/assets/007-ai-crypto-bot" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/M93SG2DFD37UE" class="btn">💸 Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 008 -->
+      <div class="card">
+        <img src="/images/forex-tariff.jpg" alt="Forex Tariff Strategies" />
+        <div class="card-content">
+          <h2>008 – Forex Tariff Strategies</h2>
+          <p class="price">€2</p>
+          <div class="actions">
+            <a href="/assets/008-forex-tariff-strategies" class="btn">👁️ View Asset</a>
+            <a href="https://www.paypal.com/ncp/payment/MZY5TYPG52RHL" class="btn">💸 Buy Now</a>
+          </div>
+        </div>
+      </div>
 
     </div>
 
-    <!-- Referral CTA -->
-    <section class="referral">
-      <h2>💸 Invite & Earn Free Drops</h2>
-      <p class="muted">Get 1 free drop for every 3 friends you refer. Start sharing today and build your trading toolkit without spending a cent.</p>
-      <a class="btn" href="/invite">Start Referring</a>
-    </section>
-  </main>
-
-  <footer class="container">
-    © <span id="y"></span> EarnBasis — Built for Traders
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+    <p class="note">© EarnBasis – Empowering Traders Worldwide</p>
+  </div>
 </body>
 </html>
