@@ -1,192 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EarnBasis – Digital Assets That Pay You</title>
-  <meta name="description" content="Get instant access to profitable micro-assets, cheat sheets, and trading playbooks. Built for speed. Designed to convert.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EarnBasis – Daily Drops</title>
+  <meta name="description" content="Download high-value micro-assets for traders, creators and crypto entrepreneurs. New drops every week. Simple. Fast. Powerful." />
   <meta name="robots" content="index,follow" />
-  <link rel="icon" href="/logo.png" />
+  <link rel="icon" href="/logo/favicon.ico" />
+  <link rel="canonical" href="https://earnbasis.com" />
+
   <style>
-    :root {
-      --accent: #22d3ee;
-      --accent2: #a78bfa;
-    }
     body {
       margin: 0;
-      padding: 0;
+      padding: 20px;
       font-family: sans-serif;
       background: #0b0d12;
       color: #e9eefc;
-      line-height: 1.6;
     }
-    header, footer {
-      text-align: center;
-      padding: 40px 20px;
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
     }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+    h1, h2, h3 {
+      color: #e9eefc;
     }
-    .cta {
-      font-size: 18px;
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+    .logo {
+      width: 160px;
       margin-bottom: 30px;
     }
+    .asset-card {
+      border: 1px solid #1f2740;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 24px;
+      background: #12151c;
+    }
+    .asset-card h3 {
+      margin: 0 0 10px;
+    }
+    .asset-card img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
     .btn {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      display: inline-block;
+      background: linear-gradient(90deg,#22d3ee,#a78bfa);
       color: #0b0d12;
       font-weight: bold;
       padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
-      display: inline-block;
+      margin-top: 12px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-      margin: 10px;
     }
-    .section {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .card-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 30px;
-    }
-    .card {
-      background: #131720;
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid #1f2740;
-    }
-    .card h3 {
-      margin-top: 0;
-      font-size: 20px;
-    }
-    .muted {
-      color: #aeb9d7;
-      font-size: 14px;
-    }
-    .referral-banner {
+    .referral, .vault, .newsletter {
+      border-top: 1px solid #1f2740;
       margin-top: 40px;
-      padding: 20px;
-      border: 1px dashed var(--accent);
-      border-radius: 10px;
-      text-align: center;
-      background: #11141a;
+      padding-top: 30px;
     }
-    .newsletter {
-      margin-top: 60px;
-      padding: 40px 0;
-      border-top: 1px solid #2a3557;
-      text-align: center;
-    }
-    .newsletter form {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-    .newsletter input[type="email"] {
+    .newsletter input {
       padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #334155;
-      background: #121826;
-      color: #e9eefc;
-      min-width: 240px;
-    }
-    .newsletter button {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color: #0b0d12;
-      font-weight: bold;
-      padding: 10px 16px;
-      border-radius: 8px;
-      cursor: pointer;
+      border-radius: 6px;
+      margin-right: 10px;
+      width: 220px;
+      max-width: 80%;
       border: none;
     }
-    .countdown {
-      font-size: 18px;
+    .newsletter button {
+      padding: 10px 20px;
+      border-radius: 6px;
       font-weight: bold;
-      margin-top: 10px;
-      color: var(--accent);
+      background: #22d3ee;
+      color: #0b0d12;
+      border: none;
     }
-    .logo {
-      width: 120px;
-      margin-bottom: 20px;
+    .note {
+      font-size: 13px;
+      color: #9aa4c7;
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
+    <img src="/logo/earnbasis-logo.png" alt="EarnBasis Logo" class="logo" />
 
-<header>
-  <img src="/logo.png" alt="EarnBasis Logo" class="logo" />
-  <h1>Digital Assets That Pay You</h1>
-  <p class="cta">Get access to powerful cheat sheets & trading tools. Download, learn, earn.</p>
-  <a href="/drops" class="btn">📂 Browse All Drops</a>
-  <a href="/vault" class="btn">🔒 Unlock Vault Access</a>
-</header>
+    <h1>📦 Daily Drops – Actionable Micro Assets</h1>
+    <p>Every asset below is created to give you fast results – within 15 minutes or less. Just download, apply, and grow.</p>
 
-<section class="section">
-  <h2>🔥 What's Hot Right Now</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>007 – AI Crypto Bots</h3>
-      <p>Set up your own AI-driven bot and start trading smarter. Includes RSI strategy & platform guide.</p>
-      <a href="/assets/007-ai-crypto-trading-bots" class="btn">💸 €5 – Get It</a>
+    <!-- Asset 007 -->
+    <div class="asset-card">
+      <h3>007 – AI-Powered Crypto Trading Bots</h3>
+      <p>Learn how to automate your trading with AI bots using clear steps and working strategies.</p>
+      <img src="/images/ai-crypto-bot.jpg" alt="AI Trading Bots" />
+      <br />
+      <a href="/assets/007-ai-crypto-trading-bots" class="btn">🔍 View Asset</a>
     </div>
-    <div class="card">
-      <h3>008 – Forex Tariff Strategies</h3>
-      <p>Trade major pairs during 2025 tariff chaos. Learn how USD/JPY and EUR/USD are impacted.</p>
-      <a href="/assets/008-forex-tariff-strategies" class="btn">💸 €2 – Grab This</a>
+
+    <!-- Asset 008 -->
+    <div class="asset-card">
+      <h3>008 – Forex Tariff Impact Strategies</h3>
+      <p>Discover how to trade forex pairs during global trade tensions using smart breakout strategies.</p>
+      <img src="/images/forex-tariff.jpg" alt="Tariff Forex" />
+      <br />
+      <a href="/assets/008-forex-tariff-strategies" class="btn">🔍 View Asset</a>
     </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <h2>📧 Get Notified When New Assets Drop</h2>
+      <p>1 email per week. No spam. Just pure trading gold.</p>
+      <form id="subscribe-form">
+        <input type="email" id="email" placeholder="Your email..." required />
+        <button type="submit">🔔 Subscribe</button>
+      </form>
+      <div id="subscribe-message" class="note"></div>
+    </div>
+
+    <!-- Referral -->
+    <div class="referral">
+      <h2>👥 Invite Traders, Earn Free Assets</h2>
+      <p>Share EarnBasis with your friends. For every person who joins, you earn Vault credits or full asset unlocks.</p>
+      <p><a href="/invite">🔗 Get Your Referral Link</a></p>
+    </div>
+
+    <!-- Vault Access -->
+    <div class="vault">
+      <h2>🔓 Want Lifetime Vault Access?</h2>
+      <p>Unlock ALL current and future assets. One payment. Lifetime updates. Coming soon.</p>
+      <p><a href="/vault" class="btn">Learn More</a></p>
+    </div>
+
+    <p class="note">© EarnBasis — All assets are copyright protected. Do not redistribute.</p>
   </div>
-</section>
 
-<section class="referral-banner">
-  <h3>👥 Invite Others, Earn Free Drops</h3>
-  <p>Refer friends and earn free assets, upgrades & Vault credits.</p>
-  <a href="/invite" class="btn">📨 Get Your Referral Link</a>
-</section>
+  <script>
+    const form = document.getElementById("subscribe-form");
+    const msg = document.getElementById("subscribe-message");
 
-<section class="newsletter" id="newsletter">
-  <h2>📬 Stay in the Loop</h2>
-  <p class="muted">Be the first to know when new assets drop or we run promos. Join the email list.</p>
-  <form id="emailForm">
-    <input type="email" id="emailInput" name="email" placeholder="Your best email" required />
-    <button type="submit">Subscribe</button>
-    <p id="emailMsg" class="muted"></p>
-  </form>
-</section>
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
 
-<footer>
-  <p class="muted">© 2025 EarnBasis. All rights reserved.</p>
-</footer>
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email })
+      });
 
-<script>
-document.getElementById("emailForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
-  const email = document.getElementById("emailInput").value;
-  const msg = document.getElementById("emailMsg");
-
-  try {
-    const res = await fetch("/api/subscribe", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email })
+      const json = await res.json();
+      if (json.ok) {
+        msg.innerText = "✅ Subscribed! Check your inbox.";
+        form.reset();
+      } else {
+        msg.innerText = "❌ Subscription failed. Try again.";
+      }
     });
-    const data = await res.json();
-    if (res.ok) {
-      msg.textContent = "✅ You're in! Check your inbox.";
-    } else {
-      msg.textContent = data.error || "❌ Something went wrong.";
-    }
-  } catch (err) {
-    msg.textContent = "❌ Server error. Please try again later.";
-  }
-});
-</script>
-
+  </script>
 </body>
 </html>
