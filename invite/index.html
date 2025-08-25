@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Invite & Earn Free Assets</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --card: #121520;
+      --text: #e9eefc;
+      --muted: #aeb9d7;
+      --accent: #22d3ee;
+      --accent2: #818cf8;
+      --border: #1f2740;
+    }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 600px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h1 {
+      font-size: 26px;
+      margin-top: 0;
+    }
+    p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input[type="email"] {
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 360px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #0b0d12;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(56,189,248,0.2);
+    }
+    input[type="submit"]:hover {
+      box-shadow: 0 8px 28px rgba(56,189,248,0.3);
+    }
+    .info {
+      font-size: 14px;
+      margin-top: 30px;
+      color: var(--muted);
+    }
+    .backlink {
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 14px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .backlink:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🎯 Invite & Earn Free Drops</h1>
+    <p>Want to unlock exclusive EarnBasis assets for free?</p>
+    <p>Invite your friends using your personal referral link.</p>
+    <p><strong>Get 3 people to join</strong> — and you get a premium drop at no cost.</p>
+
+    <form action="https://buttondown.email/api/emails/embed-subscribe/earnbasis" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/earnbasis', 'popupwindow')">
+      <input type="email" name="email" placeholder="Your email..." required />
+      <input type="hidden" name="tag" value="referral" />
+      <br/>
+      <input type="submit" value="Create My Referral Link →" />
+    </form>
+
+    <p class="info">You’ll receive your unique link via email. Track your referrals and claim your rewards.</p>
+
+    <a class="backlink" href="/drops">← Back to Trading Vault</a>
+  </div>
+</body>
+</html>
