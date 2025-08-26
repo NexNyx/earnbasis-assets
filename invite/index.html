@@ -91,16 +91,44 @@
     <p>Invite your friends using your personal referral link.</p>
     <p><strong>Get 3 people to join</strong> — and you get a premium drop at no cost.</p>
 
-    <form action="https://buttondown.email/api/emails/embed-subscribe/earnbasis" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/earnbasis', 'popupwindow')">
+    <form id="referral-form">
       <input type="email" name="email" placeholder="Your email..." required />
-      <input type="hidden" name="tag" value="referral" />
       <br/>
       <input type="submit" value="Create My Referral Link →" />
     </form>
+
+    <p id="referral-message" class="info"></p>
 
     <p class="info">You’ll receive your unique link via email. Track your referrals and claim your rewards.</p>
 
     <a class="backlink" href="/drops">← Back to Trading Vault</a>
   </div>
+
+  <script>
+    const form = document.getElementById('referral-form');
+    const message = document.getElementById('referral-message');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = form.email.value.trim();
+
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          tag: 'referral'
+        })
+      });
+
+      const data = await res.json();
+      if (data.ok || data.success) {
+        message.textContent = "✅ You’re in! Your referral link will be sent by email.";
+        form.reset();
+      } else {
+        message.textContent = "❌ Something went wrong. Please try again.";
+      }
+    });
+  </script>
 </body>
 </html>

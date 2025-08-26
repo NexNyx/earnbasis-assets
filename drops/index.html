@@ -3,152 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EarnBasis Drops – Limited Micro Assets</title>
-  <meta name="description" content="Access today’s hottest trading drops. High-conversion cheat sheets and AI strategies. Limited time only." />
+  <title>EarnBasis Drops – All Trading Assets</title>
+  <meta name="description" content="Browse every EarnBasis trading asset. Apply each one in 15 minutes: playbooks, cheat sheets, templates and tools for Forex, Gold and Crypto." />
   <meta name="robots" content="index,follow" />
   <link rel="icon" href="/logo/favicon.ico" />
-  <link rel="canonical" href="https://earnbasis.com/drops" />
-
   <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: sans-serif;
-      background: #0b0d12;
-      color: #e9eefc;
+    :root{
+      --bg:#0b0d12; --text:#e9eefc; --muted:#9aa4c7;
+      --card:#121520; --line:#1f2740;
+      --brand1:#22d3ee; --brand2:#a78bfa; --brandtxt:#0b0d12;
     }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    h1, h2, h3 {
-      color: #e9eefc;
-    }
-    a {
-      color: #a78bfa;
-      text-decoration: none;
-    }
-    .logo {
-      width: 160px;
-      margin-bottom: 30px;
-    }
-    .asset-card {
-      border: 1px solid #1f2740;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 24px;
-      background: #12151c;
-    }
-    .asset-card h3 {
-      margin: 0 0 10px;
-    }
-    .asset-card img {
-      width: 100%;
-      max-width: 480px;
-      border-radius: 8px;
-      margin-top: 12px;
-    }
-    .btn {
-      display: inline-block;
-      background: linear-gradient(90deg,#22d3ee,#a78bfa);
-      color: #0b0d12;
-      font-weight: bold;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
-    }
-    .newsletter {
-      border-top: 1px solid #1f2740;
-      margin-top: 40px;
-      padding-top: 30px;
-    }
-    .newsletter input {
-      padding: 10px;
-      border-radius: 6px;
-      margin-right: 10px;
-      width: 220px;
-      max-width: 80%;
-      border: none;
-    }
-    .newsletter button {
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      background: #22d3ee;
-      color: #0b0d12;
-      border: none;
-    }
-    .note {
-      font-size: 13px;
-      color: #9aa4c7;
-      margin-top: 20px;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Inter,Segoe UI,Roboto,Arial}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px}
+    header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+    .logo{height:36px}
+    h1{font-size:28px;margin:8px 0}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+    @media (max-width:980px){ .grid{grid-template-columns:1fr} }
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .card h3{margin:0 0 6px 0;font-size:18px}
+    .card p{margin:0;color:var(--muted)}
+    .thumb{width:100%;border-radius:12px;border:1px solid #16213a;margin:10px 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;font-weight:800;border-radius:10px;padding:12px 14px;background:linear-gradient(90deg,var(--brand1),var(--brand2));color:var(--brandtxt)}
+    .foot{border-top:1px solid var(--line);margin-top:28px;padding-top:22px}
+    .row{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    @media (max-width:980px){ .row{grid-template-columns:1fr} }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <img src="/logo/earnbasis-logo.png" alt="EarnBasis Logo" class="logo" />
+  <div class="wrap">
+    <header>
+      <img class="logo" src="/images/earnbasis-logo.png" alt="EarnBasis" />
+      <strong>EarnBasis Drops</strong>
+    </header>
 
-    <h1>🔥 This Week’s Drops</h1>
-    <p>These assets are only available for a limited time. Download, trade, and win. No fluff, just fire.</p>
+    <h1>📦 All Drops — Instant-Use Trading Assets</h1>
+    <p class="lead">Short, actionable and built for real charts. Apply any asset in ~15 minutes. New releases added frequently.</p>
 
-    <!-- Asset 008 -->
-    <div class="asset-card">
-      <h3>008 – Forex Tariff Impact Strategies (€2)</h3>
-      <p>Trade forex markets intelligently during trade wars. Includes breakout strategy and USD insights.</p>
-      <img src="/images/forex-tariff.jpg" alt="Tariff Forex" />
-      <br />
-      <a href="/assets/008-forex-tariff-strategies" class="btn">💡 View Strategy</a>
+    <!-- ASSETS GRID -->
+    <div class="grid">
+
+      <!-- 011 -->
+      <article class="card">
+        <h3>#011 — Forex Day Trading Playbook (27 pages)</h3>
+        <p>Complete day trading guide: market structure, entries/exits, risk, psychology, routines & templates. <em>Intro €17 (reg. €27)</em>.</p>
+        <img class="thumb" src="/images/forex-day-playbook.jpg" alt="Asset 011 cover" />
+        <a class="btn" href="/assets/011-forex-day-trading-playbook/">View Asset</a>
+      </article>
+
+      <!-- 010 -->
+      <article class="card">
+        <h3>#010 — 7 AI Tools Every Trader Should Use</h3>
+        <p>Powerful free/cheap AI tools for traders: analysis, bots, auto-news, signal boosters. Includes affiliate resources.</p>
+        <img class="thumb" src="/images/ai-tools-traders.jpg" alt="Asset 010 cover" />
+        <a class="btn" href="/assets/010-ai-tools-traders/">View Asset</a>
+      </article>
+
+      <!-- 009 -->
+      <article class="card">
+        <h3>#009 — Crypto Launch Sniper</h3>
+        <p>Catch new token launches early using Telegram, DEX tools and anti-scam checks. Fast, tactical, degen-friendly.</p>
+        <img class="thumb" src="/images/crypto-launch.jpg" alt="Asset 009 cover" />
+        <a class="btn" href="/assets/009-crypto-launch-sniper/">View Asset</a>
+      </article>
+
+      <!-- 008 -->
+      <article class="card">
+        <h3>#008 — Forex Tariff Impact Strategies</h3>
+        <p>Trade tariff-driven volatility with clean frameworks for EUR/USD, USD/JPY and more.</p>
+        <img class="thumb" src="/images/forex-tariff.jpg" alt="Asset 008 cover" />
+        <a class="btn" href="/assets/008-forex-tariff-strategies/">View Asset</a>
+      </article>
+
+      <!-- 007 -->
+      <article class="card">
+        <h3>#007 — Telegram Trading Bots</h3>
+        <p>Set up, monetize and scale Telegram bots for signals, alerts and VIP communities.</p>
+        <img class="thumb" src="/images/telegram-bot.jpg" alt="Asset 007 cover" />
+        <a class="btn" href="/assets/007-telegram-bots/">View Asset</a>
+      </article>
+
+      <!-- 006 -->
+      <article class="card">
+        <h3>#006 — Gold Day Trading Map</h3>
+        <p>Your intraday map for XAU/USD: sessions, zones, execution flow and risk planning.</p>
+        <img class="thumb" src="/images/gold-day-map.jpg" alt="Asset 006 cover" />
+        <a class="btn" href="/assets/006-gold-day-map/">View Asset</a>
+      </article>
+
+      <!-- 005 -->
+      <article class="card">
+        <h3>#005 — London Breakout Strategy</h3>
+        <p>Time-tested morning breakout with box rules, entry logic, SL/TP and session timing.</p>
+        <img class="thumb" src="/images/london-breakout.jpg" alt="Asset 005 cover" />
+        <a class="btn" href="/assets/005-london-breakout/">View Asset</a>
+      </article>
+
+      <!-- 004 -->
+      <article class="card">
+        <h3>#004 — ETH Yield Playbook</h3>
+        <p>Generate ETH yield via staking, pools and high-efficiency methods. No hype, just steps.</p>
+        <img class="thumb" src="/images/eth-yield.jpg" alt="Asset 004 cover" />
+        <a class="btn" href="/assets/004-eth-yield/">View Asset</a>
+      </article>
+
+      <!-- 003 -->
+      <article class="card">
+        <h3>#003 — BTC Scalping Strategy Pack</h3>
+        <p>Fast-paced Bitcoin scalps for high-volatility sessions. Clear entries, risk and targets.</p>
+        <img class="thumb" src="/images/btc-scalp.jpg" alt="Asset 003 cover" />
+        <a class="btn" href="/assets/003-btc-scalp/">View Asset</a>
+      </article>
+
+      <!-- 002 -->
+      <article class="card">
+        <h3>#002 — AI-Powered Crypto Trading 2025</h3>
+        <p>AI prompts & workflows to discover, confirm and journal crypto trades. Practical, current.</p>
+        <img class="thumb" src="/images/ai-crypto-trading.jpg" alt="Asset 002 cover" />
+        <a class="btn" href="/assets/002-crypto-ai-trading/">View Asset</a>
+      </article>
+
+      <!-- 001 -->
+      <article class="card">
+        <h3>#001 — Forex Risk Management Mastery</h3>
+        <p>Pro-level risk rules, position sizing and SL/TP logic. Templates and calculators included.</p>
+        <img class="thumb" src="/images/forex-risk.jpg" alt="Asset 001 cover" />
+        <a class="btn" href="/assets/001-forex-risk-management/">View Asset</a>
+      </article>
+
     </div>
 
-    <!-- Asset 007 -->
-    <div class="asset-card">
-      <h3>007 – AI-Powered Crypto Trading Bots (€5)</h3>
-      <p>Automate your crypto trading using AI bots. Learn how to configure, test, and scale profits fast.</p>
-      <img src="/images/ai-crypto-bot.jpg" alt="AI Trading Bots" />
-      <br />
-      <a href="/assets/007-ai-crypto-trading-bots" class="btn">🤖 View Bot Guide</a>
+    <!-- LTD & REFERRAL FOOTER -->
+    <div class="foot">
+      <div class="row">
+        <div class="card">
+          <h2 style="margin:0 0 6px 0">🔓 Lifetime Deal — Best Value</h2>
+          <p class="lead">Unlock all current assets (incl. premium #011 Playbook) + every future release. One payment. Lifetime updates.</p>
+          <a class="btn" href="/ltd">💼 Get the Lifetime Deal</a>
+        </div>
+        <div class="card">
+          <h2 style="margin:0 0 6px 0">💸 Earn by sharing</h2>
+          <p class="lead">Join the referral program and earn rewards by sending traders to EarnBasis.</p>
+          <a class="btn" href="/invite">🎯 Join Referral Program</a>
+        </div>
+      </div>
+      <p style="color:var(--muted);margin-top:16px">© EarnBasis — Trading education assets. No financial advice. Results vary.</p>
     </div>
-
-    <!-- Newsletter -->
-    <div class="newsletter">
-      <h2>📧 Get New Drops in Your Inbox</h2>
-      <p>1 email per week. Early access. No noise.</p>
-      <form id="subscribe-form">
-        <input type="email" id="email" placeholder="Your email..." required />
-        <button type="submit">🔔 Subscribe</button>
-      </form>
-      <div id="subscribe-message" class="note"></div>
-    </div>
-
-    <p class="note">© EarnBasis – All content is licensed and tracked. No redistribution without permission.</p>
   </div>
-
-  <script>
-    const form = document.getElementById("subscribe-form");
-    const msg = document.getElementById("subscribe-message");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const email = document.getElementById("email").value;
-
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email })
-      });
-
-      const json = await res.json();
-      if (json.ok) {
-        msg.innerText = "✅ Subscribed! Check your inbox.";
-        form.reset();
-      } else {
-        msg.innerText = "❌ Subscription failed. Try again.";
-      }
-    });
-  </script>
 </body>
 </html>
