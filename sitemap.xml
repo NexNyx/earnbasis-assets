@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
+  <url><loc>https://earnbasis.com/</loc></url>
+  <url><loc>https://earnbasis.com/drops</loc></url>
+  <url><loc>https://earnbasis.com/assets/000-ltd-access/</loc></url>
+  <url><loc>https://earnbasis.com/invite</loc></url>
+  <url><loc>https://earnbasis.com/vault</loc></url>
+  <url><loc>https://earnbasis.com/blogs/</loc></url>
+
+  <!-- Assets -->
+  <url><loc>https://earnbasis.com/assets/001-forex-risk-management/</loc></url>
+  <url><loc>https://earnbasis.com/assets/002-crypto-ai-trading/</loc></url>
+  <url><loc>https://earnbasis.com/assets/003-bitcoin-scalping/</loc></url>
+  <url><loc>https://earnbasis.com/assets/004-ethereum-yield-farming/</loc></url>
+  <url><loc>https://earnbasis.com/assets/005-london-breakout/</loc></url>
+  <url><loc>https://earnbasis.com/assets/006-gold-day-map/</loc></url>
+  <url><loc>https://earnbasis.com/assets/007-telegram-bots/</loc></url>
+  <url><loc>https://earnbasis.com/assets/008-forex-tariff-strategies/</loc></url>
+  <url><loc>https://earnbasis.com/assets/009-crypto-launch-sniper/</loc></url>
+  <url><loc>https://earnbasis.com/assets/010-ai-tools-traders/</loc></url>
+  <url><loc>https://earnbasis.com/assets/011-forex-day-trading-playbook/</loc></url>
+
+  <!-- Blogs 001 -->
+  <url><loc>https://earnbasis.com/blogs/001/forex-risk-rules-traders-break.html</loc></url>
+  <url><loc>https://earnbasis.com/blogs/001/forex-position-sizing-pro.html</loc></url>
+
+  <!-- Blogs 002 -->
+  <url><loc>https://earnbasis.com/blogs/002/ai-prompts-crypto-setups.html</loc></url>
+  <url><loc>https://earnbasis.com/blogs/002/ai-journaling-trade-reviews.html</loc></url>
+
+  <!-- Blogs 011 -->
+  <url><loc>https://earnbasis.com/blogs/011/forex-day-trading-checklist.html</loc></url>
+  <url><loc>https://earnbasis.com/blogs/011/forex-market-structure-mtf-workflow.html</loc></url>
+
+</urlset>
