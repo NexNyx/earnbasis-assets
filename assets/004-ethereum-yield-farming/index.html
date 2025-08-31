@@ -3,43 +3,167 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🌱 ETH Yield Farming Cheat Sheet | EarnBasis</title>
-  <meta name="description" content="Beginner-friendly Ethereum yield farming guide. Earn passive income with safe DeFi tools." />
+  <title>Ethereum Yield Farming (2025) – ETH Yield & DeFi Safety Guide | EarnBasis</title>
+  <meta name="description" content="Beginner-friendly Ethereum yield farming cheat sheet. Learn safe DeFi methods, avoid scams, calculate APY, and optimize ETH yield in 15 minutes. Download for €2." />
   <link rel="canonical" href="https://earnbasis.com/assets/004-ethereum-yield-farming" />
   <meta name="robots" content="index,follow" />
+
+  <!-- Optional but helpful for previews -->
+  <meta property="og:title" content="Ethereum Yield Farming (2025) – ETH Yield & DeFi Safety Guide" />
+  <meta property="og:description" content="Learn safe Ethereum yield farming in 15 minutes: wallets, platforms, APY math, and risk controls. €2 cheat sheet." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://earnbasis.com/assets/004-ethereum-yield-farming" />
+  <meta property="og:image" content="https://earnbasis.com/images/004-eth-yield-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
-    body { margin: 0; padding: 24px; font-family: system-ui, sans-serif; background: #0b0d12; color: #e9eefc; }
-    h1 { font-size: 28px; margin-bottom: 12px; }
-    p { line-height: 1.6; }
-    .btn { display: inline-block; background: linear-gradient(90deg,#22d3ee,#a78bfa); color: #0b0d12; font-weight: bold; padding: 14px 24px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.4); margin: 12px 0; }
-    ul { margin-top: 16px; padding-left: 20px; }
+    body { margin: 0; padding: 24px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #0b0d12; color: #e9eefc; }
+    h1 { font-size: 30px; margin-bottom: 12px; }
+    h2 { font-size: 22px; margin: 28px 0 12px; }
+    p  { line-height: 1.7; font-size: 16px; max-width: 780px; }
+    ul { margin-top: 12px; padding-left: 20px; line-height: 1.7; max-width: 780px; }
+    .btn { display: inline-block; background: linear-gradient(90deg,#22d3ee,#a78bfa); color: #0b0d12; font-weight: bold; padding: 14px 24px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.4); margin: 16px 0; }
     .section { margin-top: 40px; border-top: 1px solid #1f2740; padding-top: 30px; }
     .note { color: #aeb9d7; font-size: 13px; margin-top: 40px; }
     .logo { max-width: 160px; margin-bottom: 20px; }
+    .cover { max-width: 820px; width: 100%; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.35); margin: 0 0 20px 0; }
+    a.inline { color: #9ad1ff; text-decoration: underline; }
   </style>
 </head>
 <body>
   <article>
-    <img class="logo" src="/logo.png" alt="EarnBasis logo" />
-    <h1>🌱 ETH Yield Farming: Passive Profits in 15 Minutes</h1>
-    <p>This simple PDF shows you how to earn safe, passive ETH rewards — even if you’re new to DeFi.</p>
+    <img class="logo" src="/images/earnbasis_logo.png" alt="EarnBasis logo" />
+    <img class="cover" src="/images/004-eth-yield-cover.jpg" alt="Ethereum yield farming cheat sheet cover – EarnBasis" />
+
+    <h1>🌱 Ethereum Yield Farming (2025): Safe ETH Yield in 15 Minutes</h1>
+    <p>
+      New to DeFi and want <strong>passive ETH rewards</strong> without babysitting charts?  
+      This beginner-friendly <em>Ethereum Yield Farming Cheat Sheet</em> shows you how to earn yield safely, avoid common traps, and calculate realistic APY so you know exactly what to expect.
+    </p>
+
     <ul>
-      <li>💼 Set up your wallet and access the right platforms</li>
-      <li>🔒 Stay safe from the biggest yield farming scams</li>
-      <li>📈 Optimize your ROI without constant monitoring</li>
+      <li>💼 Wallet basics & secure setup (seed hygiene, approvals, test tx)</li>
+      <li>🔒 Risk controls to avoid common DeFi scams and rug pulls</li>
+      <li>📈 APY vs APR explained + quick math for realistic returns</li>
+      <li>🧪 Step-by-step flow to deposit, monitor, and rebalance</li>
     </ul>
+
     <a class="btn" href="https://www.paypal.com/ncp/payment/XQMZ8M83XXPSS" target="_blank">💸 Buy Now – Only €2</a>
+
+    <h2>What Is ETH Yield Farming?</h2>
+    <p>
+      <strong>Yield farming</strong> on Ethereum means supplying, staking, or providing liquidity to protocols in exchange for rewards (fees, incentives, staking yield).  
+      Unlike trading, it’s a mostly passive strategy—your edge comes from choosing <em>credible protocols</em>, understanding <em>fees & risks</em>, and <em>position sizing</em>.
+    </p>
+
+    <h2>Inside the Cheat Sheet</h2>
+    <ul>
+      <li><strong>Wallet & Network Checklist:</strong> choosing networks, gas planning, approval safety</li>
+      <li><strong>Platform Evaluation:</strong> TVL, audits, transparency, track record (quick rubric)</li>
+      <li><strong>Yield Math:</strong> APY/APR, compounding cadence, fee drag, IL primer</li>
+      <li><strong>Risk Playbook:</strong> smart-contract risk, depeg risk, liquidity risk, how to limit exposure</li>
+      <li><strong>Action Flow:</strong> deposit → verify accrual → harvest/compound → rebalance</li>
+      <li><strong>Templates:</strong> position log & yield tracker to keep results accountable</li>
+    </ul>
+
+    <h2>ETH Yield: Staking vs Liquidity vs Lending</h2>
+    <p>
+      There isn’t one “best” method; each has a profile:  
+    </p>
+    <ul>
+      <li><strong>Staking ETH:</strong> simpler, lower active risk, protocol/APY variance; ideal for set-and-forget.</li>
+      <li><strong>Lending:</strong> supply ETH or stables; yields depend on utilization; monitor collateral rules.</li>
+      <li><strong>Liquidity Pools:</strong> earn swap fees/incentives but face <em>impermanent loss</em>; size positions accordingly.</li>
+    </ul>
+    <p>
+      The sheet teaches when to use which, how to cap downside, and how to rotate when incentives change.
+    </p>
+
+    <h2>Who It’s For</h2>
+    <p>
+      – New DeFi users wanting a safe, structured start<br/>
+      – Traders parking profits in passive ETH strategies<br/>
+      – Funded traders needing low-touch yield between sessions
+    </p>
+
     <div class="section">
-      <h2>🔐 Vault Access: No More Pay-Per-Drop</h2>
-      <p>One-time payment. Lifetime access to all current + future cheat sheets.</p>
-      <p><a class="btn" href="/vault">🔓 Learn About Vault Access</a></p>
+      <h2>🔗 Related Trading Assets</h2>
+      <p>
+        Build a complete system with these:
+        <a class="inline" href="/assets/001-forex-risk-management">Forex Risk Management</a>,
+        <a class="inline" href="/assets/003-bitcoin-scalping">Bitcoin Scalping Strategy</a>,
+        <a class="inline" href="/assets/010-ai-tools-traders">7 AI Tools for Traders</a>.
+      </p>
     </div>
+
     <div class="section">
-      <h2>👥 Refer & Earn</h2>
-      <p>3 invites = 1 free asset. No catch. Just rewards for sharing.</p>
+      <h2>🔐 Upgrade: Lifetime Vault Access</h2>
+      <p>
+        Get this PDF plus <strong>all future EarnBasis drops</strong> (forex, crypto, AI, strategy maps) for a one-time fee.  
+        No subscriptions, lifetime updates—perfect for long-term builders.
+      </p>
+      <p><a class="btn" href="/assets/000-ltd-access/">🔓 Learn About Vault Access</a></p>
+    </div>
+
+    <div class="section">
+      <h2>👥 Refer Traders. Earn Free Assets.</h2>
+      <p>
+        Share EarnBasis with your network. Every 3 referrals unlocks <strong>1 asset for free</strong>—stack as many as you like.
+      </p>
       <p><a class="btn" href="/invite">📨 Get Your Referral Link</a></p>
     </div>
-    <p class="note">© EarnBasis — Asset 004: Ethereum Yield Farming</p>
+
+    <h2>FAQ – ETH Yield Farming</h2>
+    <p><strong>❓ Is yield farming the same as staking?</strong><br/>
+    ✅ Not exactly. Staking secures a network for yield; yield farming broadly includes lending and liquidity provisioning too.</p>
+
+    <p><strong>❓ What about impermanent loss (IL)?</strong><br/>
+    ✅ IL happens in liquidity pools when prices move. The sheet explains how to size positions, prefer correlated pairs, and when fees can offset IL.</p>
+
+    <p><strong>❓ Do I need a lot of ETH?</strong><br/>
+    ✅ No. You can start small. Just account for gas fees and keep a buffer for network costs.</p>
+
+    <p><strong>❓ How do I avoid rugs/scams?</strong><br/>
+    ✅ Use the included platform checklist: audits, TVL consistency, open-source code, and reputation. Start with tiny test transactions.</p>
+
+    <p class="note">© EarnBasis — Asset 004: Ethereum Yield Farming (2025)</p>
   </article>
+
+  <!-- FAQ structured data for rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Is yield farming the same as staking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not exactly. Staking secures a network for yield; yield farming broadly includes lending and liquidity provisioning too."
+      }
+    },{
+      "@type": "Question",
+      "name": "What about impermanent loss (IL)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IL happens in liquidity pools when prices move. The cheat sheet explains how to size positions, prefer correlated pairs, and when fees can offset IL."
+      }
+    },{
+      "@type": "Question",
+      "name": "Do I need a lot of ETH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You can start small. Just account for gas fees and keep a buffer for network costs."
+      }
+    },{
+      "@type": "Question",
+      "name": "How do I avoid rugs and scams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the platform checklist: audits, TVL consistency, open-source code, and reputation. Start with tiny test transactions before committing size."
+      }
+    }]
+  }
+  </script>
 </body>
 </html>

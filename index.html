@@ -3,26 +3,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EarnBasis – Daily Trading Assets (Cheat Sheets, Playbooks & LTD)</title>
-  <meta name="description" content="Bite-sized trading assets you can apply in 15 minutes. Playbooks, checklists, templates and tools. Grab the Lifetime Deal and unlock every asset + all future releases." />
+  <title>EarnBasis – Trading Assets in 15 Minutes (Cheat Sheets, Playbooks, LTD)</title>
+  <meta name="description" content="Bite-sized trading assets for Forex, Gold & Crypto. Cheat sheets, playbooks, templates & tools you can apply in 15 minutes. Get the Lifetime Deal to unlock every asset + all future releases." />
   <meta name="robots" content="index,follow" />
-  <link rel="icon" href="/images/favicon.ico" />
   <link rel="canonical" href="https://earnbasis.com" />
+  <link rel="icon" href="/images/favicon.ico" />
+
+  <!-- Social preview -->
   <meta property="og:title" content="EarnBasis – Daily Trading Assets" />
-  <meta property="og:description" content="15-minute trading assets. Playbooks, checklists and ready-to-use strategies. Lifetime Deal available." />
-  <meta property="og:image" content="/images/earnbasis_logo.png" />
+  <meta property="og:description" content="15-minute trading assets: cheat sheets, playbooks & templates. Lifetime Deal available." />
+  <meta property="og:image" content="https://earnbasis.com/images/forex-day-playbook.jpg" />
+  <meta property="og:url" content="https://earnbasis.com" />
   <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     :root{
       --bg:#0b0d12; --text:#e9eefc; --muted:#9aa4c7;
       --card:#121520; --line:#1f2740;
       --brand1:#22d3ee; --brand2:#a78bfa; --brandtxt:#0b0d12;
-      --accent:#60a5fa;
+      --accent:#60a5fa; --ok:#2dd4bf; --danger:#f87171;
     }
     *{box-sizing:border-box}
-    body{margin:0;padding:0;font-family:system-ui,Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
+    body{margin:0;font-family:system-ui,Inter,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px}
+    a:focus{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px 20px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 18px}
     .logo{height:36px}
     nav a{color:#cfe7ff;opacity:.9;margin-left:18px}
@@ -30,8 +36,10 @@
     .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:16px 0 6px}
     @media (max-width:950px){ .hero{grid-template-columns:1fr} }
     h1{font-size:34px;line-height:1.15;margin:8px 0}
+    h2{font-size:22px;margin:0 0 10px 0}
     .tag{color:var(--muted);margin:10px 0 18px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border-radius:12px;padding:14px 18px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border-radius:12px;padding:14px 18px;transition:transform .05s ease}
+    .btn:active{transform:translateY(1px)}
     .btn-primary{background:linear-gradient(90deg,var(--brand1),var(--brand2));color:var(--brandtxt)}
     .btn-ghost{border:1px solid var(--line);background:#0e1220;color:#dce9ff}
     .stamp{display:inline-block;font-size:.85rem;border:1px dashed var(--line);color:#cfe;padding:6px 10px;border-radius:10px;margin-top:10px;background:#0d1322}
@@ -55,16 +63,19 @@
     .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
     .note{font-size:.9rem;color:var(--muted);margin-top:10px}
     footer{padding:36px 0 50px;color:var(--muted)}
+    .related a.inline{color:#9ad1ff;text-decoration:underline}
+    .cat-list{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid var(--line);background:#0e1220;border-radius:20px;padding:8px 12px;color:#cfe}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
+  <div class="wrap" itemscope itemtype="https://schema.org/WebPage">
+    <header role="banner">
       <div style="display:flex;align-items:center;gap:10px">
-        <img src="/images/earnbasis_logo.png" alt="EarnBasis" class="logo" />
-        <strong>EarnBasis</strong>
+        <img src="/images/earnbasis_logo.png" alt="EarnBasis" class="logo" loading="eager" width="144" height="36" />
+        <strong itemprop="name">EarnBasis</strong>
       </div>
-      <nav>
+      <nav aria-label="Primary" role="navigation">
         <a href="/assets/000-ltd-access/">Lifetime Deal</a>
         <a href="/drops">All Drops</a>
         <a href="/assets/011-forex-day-trading-playbook/">Playbook #011</a>
@@ -73,67 +84,88 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div>
         <span class="stamp">Daily Trading Drops</span>
-        <h1>Zero-fluff trading assets you can apply in <span style="color:var(--accent)">15 minutes</span>.</h1>
-        <p class="tag">Playbooks, checklists, strategy templates and tools. Built for Forex & Crypto day traders who want clarity, speed and consistency.</p>
+        <h1 id="hero-title">Trading assets you can apply in <span style="color:var(--accent)">15 minutes</span>.</h1>
+        <p class="tag">Cheat sheets, playbooks, strategy templates & tools for Forex, Gold & Crypto day traders who want clarity, speed and consistency.</p>
         <div class="bar">
           <a class="btn btn-primary" href="/assets/000-ltd-access/">💼 Get the Lifetime Deal</a>
           <a class="btn btn-ghost" href="/drops">🔎 Browse All Drops</a>
         </div>
-        <div class="points">
+        <div class="points" aria-label="Key benefits">
           <div class="p">✅ Ready-to-use strategies (London Breakout, NY Reversal, more)</div>
           <div class="p">✅ Risk & psychology frameworks you can actually follow</div>
           <div class="p">✅ New assets added frequently — lifetime updates with LTD</div>
         </div>
       </div>
       <div class="hero-card">
-        <img class="cover" src="/images/forex-day-playbook.jpg" alt="Forex Day Trading Playbook cover" />
+        <img class="cover" src="/images/forex-day-playbook.jpg" alt="Forex Day Trading Playbook cover" loading="lazy" width="760" height="500" />
         <div class="stamp" style="margin-top:12px">NEW: Asset 011 — <strong>Forex Day Trading Playbook (27 pages)</strong> — <a href="/assets/011-forex-day-trading-playbook/">view</a></div>
       </div>
     </section>
 
+    <!-- CATEGORIES / KEYWORDS HUB -->
+    <section class="section" aria-labelledby="categories">
+      <h2 id="categories">Popular strategy categories</h2>
+      <p class="tag">Explore focused playbooks by market & method.</p>
+      <div class="cat-list" role="list">
+        <a class="chip" href="/assets/005-london-breakout">London Breakout</a>
+        <a class="chip" href="/assets/006-gold-day-map">Gold (XAU/USD)</a>
+        <a class="chip" href="/assets/001-forex-risk-management">Risk Management</a>
+        <a class="chip" href="/assets/003-bitcoin-scalping">BTC Scalping</a>
+        <a class="chip" href="/assets/010-ai-tools-traders">AI Tools</a>
+        <a class="chip" href="/assets/007-telegram-bots">Telegram Bots</a>
+        <a class="chip" href="/assets/008-forex-tariff-strategies">Macro (Tariffs)</a>
+        <a class="chip" href="/assets/002-crypto-ai-trading">AI Prompts</a>
+        <a class="chip" href="/assets/009-crypto-launch-sniper">Launch Sniper</a>
+      </div>
+    </section>
+
     <!-- FEATURED ASSETS -->
-    <section class="section">
-      <h2 style="margin:0 0 12px 0">Featured assets</h2>
+    <section class="section" aria-labelledby="featured">
+      <h2 id="featured" style="margin:0 0 12px 0">Featured assets</h2>
       <p class="tag">Short, actionable and designed for real charts — not textbooks.</p>
 
-      <div class="grid assets">
+      <div class="grid assets" itemscope itemtype="https://schema.org/ItemList" itemprop="mainEntity">
         <!-- 011 -->
-        <article class="card">
-          <h3>#011 — Forex Day Trading Playbook (27 pages)</h3>
-          <p>Complete day trading guide: structure, entries/exits, risk, psychology, routines & templates. <em>Intro €17 (reg. €27)</em>.</p>
-          <img src="/images/forex-day-playbook.jpg" alt="Asset 011 cover" />
-          <a class="btn btn-primary" href="/assets/011-forex-day-trading-playbook/">View Asset</a>
+        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 itemprop="headline">#011 — Forex Day Trading Playbook (27 pages)</h3>
+          <p itemprop="description">Complete day trading guide: structure, entries/exits, risk, psychology, routines & templates. <em>Intro €17 (reg. €27)</em>.</p>
+          <img src="/images/forex-day-playbook.jpg" alt="Asset 011 cover" loading="lazy" width="320" height="200" />
+          <a class="btn btn-primary" href="/assets/011-forex-day-trading-playbook/" itemprop="url">View Asset</a>
+          <meta itemprop="position" content="1" />
         </article>
 
         <!-- 010 -->
-        <article class="card">
-          <h3>#010 — 7 AI Tools Every Trader Should Use</h3>
-          <p>Powerful free/cheap AI tools for traders (analysis, bots, auto-news, signal boosters). Includes affiliate resources.</p>
-          <img src="/images/010-ai-tools-traders.jpg" alt="Asset 010 cover" />
-          <a class="btn btn-primary" href="/assets/010-ai-tools-traders/">View Asset</a>
+        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 itemprop="headline">#010 — 7 AI Tools Every Trader Should Use</h3>
+          <p itemprop="description">Powerful free/cheap AI tools for traders (analysis, bots, auto-news, signal boosters). Includes affiliate resources.</p>
+          <img src="/images/010-ai-tools-traders.jpg" alt="Asset 010 cover" loading="lazy" width="320" height="200" />
+          <a class="btn btn-primary" href="/assets/010-ai-tools-traders/" itemprop="url">View Asset</a>
+          <meta itemprop="position" content="2" />
         </article>
 
         <!-- 009 -->
-        <article class="card">
-          <h3>#009 — Crypto Launch Sniper</h3>
-          <p>Catch new token launches early using Telegram, DEX tools and anti-scam checks. Fast, tactical, degen-friendly.</p>
-          <img src="/images/009-crypto-launch-sniper.jpg" alt="Asset 009 cover" />
-          <a class="btn btn-primary" href="/assets/009-crypto-launch-sniper/">View Asset</a>
+        <article class="card" itemscope itemtype="https://schema.org/CreativeWork">
+          <h3 itemprop="headline">#009 — Crypto Launch Sniper</h3>
+          <p itemprop="description">Catch new token launches early using Telegram, DEX tools and anti-scam checks. Fast, tactical, degen-friendly.</p>
+          <img src="/images/009-crypto-launch-sniper.jpg" alt="Asset 009 cover" loading="lazy" width="320" height="200" />
+          <a class="btn btn-primary" href="/assets/009-crypto-launch-sniper/" itemprop="url">View Asset</a>
+          <meta itemprop="position" content="3" />
         </article>
       </div>
+
       <div class="bar" style="margin-top:14px">
         <a class="btn btn-primary" href="/drops">Browse all assets →</a>
       </div>
     </section>
 
     <!-- LTD SECTION -->
-    <section class="section">
+    <section class="section" aria-labelledby="ltd">
       <div class="card" style="display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center">
         <div>
-          <h2 style="margin:0 0 8px 0">Lifetime Deal — Best Value</h2>
+          <h2 id="ltd" style="margin:0 0 8px 0">Lifetime Deal — Best Value</h2>
           <p class="tag">Unlock all current assets + every future release. One payment. Lifetime updates.</p>
           <ul style="margin:0 0 10px 18px;color:var(--muted)">
             <li>Includes premium #011 Playbook (reg. €27)</li>
@@ -141,42 +173,57 @@
             <li>Priority on new releases and improvements</li>
           </ul>
           <div class="bar">
-            <a class="btn btn-primary" href="/000-ltd-access">💼 Get the Lifetime Deal</a>
+            <a class="btn btn-primary" href="/assets/000-ltd-access/">💼 Get the Lifetime Deal</a>
             <span class="stamp">One-time €97 — limited spots</span>
           </div>
         </div>
         <div class="hero-card">
-          <img class="cover" src="/images/000-ltd-access.jpg" alt="Lifetime Deal pack" />
+          <img class="cover" src="/images/000-ltd-access.jpg" alt="Lifetime Deal pack" loading="lazy" width="760" height="500" />
         </div>
       </div>
     </section>
 
+    <!-- SEO CONTENT (boost long-tail keywords) -->
+    <section class="section card" aria-labelledby="how-it-works">
+      <h2 id="how-it-works">How EarnBasis works (and why traders like it)</h2>
+      <p class="tag">
+        We ship <strong>bite-sized trading assets</strong> you can apply in ~15 minutes: PDFs, checklists, templates and playbooks for Forex, Gold & Crypto.
+        Each drop includes <em>clear rules</em>, <em>risk frameworks</em>, and <em>examples</em>—so you can execute without guesswork.
+      </p>
+      <ul class="bullets" style="margin:0 0 0 18px;color:var(--muted)">
+        <li>Focus: London & New York session edges, risk management, psychology</li>
+        <li>Formats: printable cheat sheets, day maps, strategy guides, premium playbooks</li>
+        <li>Access: buy single assets or get the <a class="related inline" href="/assets/000-ltd-access/">Lifetime Deal</a> for everything</li>
+      </ul>
+    </section>
+
     <!-- NEWSLETTER -->
-    <section class="newsletter">
-      <h2 style="margin:0 0 8px 0">📬 Get weekly asset drops</h2>
+    <section class="newsletter" aria-labelledby="newsletter">
+      <h2 id="newsletter" style="margin:0 0 8px 0">📬 Get weekly asset drops</h2>
       <p class="tag">One email per week. Always actionable. Never spam.</p>
-      <form id="subscribe-form" class="row">
+      <form id="subscribe-form" class="row" method="post" action="/api/subscribe" aria-label="Newsletter subscription">
         <input type="hidden" name="list_id" value="5" />
         <input type="hidden" name="source" value="home" />
+        <label for="email" class="visually-hidden" style="position:absolute;left:-9999px">Email</label>
         <input type="email" name="email" id="email" placeholder="Your best email…" required />
         <button type="submit">🔔 Subscribe</button>
       </form>
-      <div id="subscribe-message" class="note"></div>
+      <div id="subscribe-message" class="note" role="status" aria-live="polite"></div>
     </section>
 
     <!-- REFERRAL -->
-    <section class="referral">
-      <h2 style="margin:0 0 8px 0">💸 Invite friends. Earn assets.</h2>
+    <section class="referral" aria-labelledby="referral">
+      <h2 id="referral" style="margin:0 0 8px 0">💸 Invite friends. Earn assets.</h2>
       <p class="tag">Join the referral program and earn rewards by sending traders to EarnBasis.</p>
       <a class="btn btn-ghost" href="/invite">🎯 Join the referral program</a>
     </section>
 
     <!-- FAQ -->
-    <section class="faq">
-      <h2 style="margin:0 0 10px 0">FAQ</h2>
+    <section class="faq" aria-labelledby="faq">
+      <h2 id="faq" style="margin:0 0 10px 0">FAQ</h2>
       <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
         <div class="card">
-          <strong>What’s included in the LTD?</strong>
+          <strong>What’s included in the Lifetime Deal?</strong>
           <p class="note">All current assets (including #011 Playbook) + all future releases. Lifetime access, one payment.</p>
         </div>
         <div class="card">
@@ -198,39 +245,86 @@
       <p class="note">© EarnBasis — Trading education assets. No financial advice. Results vary. Trade responsibly.</p>
     </section>
 
-    <footer></footer>
+    <footer role="contentinfo"></footer>
   </div>
 
   <script>
     // Newsletter -> Brevo proxy
     const form = document.getElementById("subscribe-form");
     const msg  = document.getElementById("subscribe-message");
-    form.addEventListener("submit", async (e) => {
+    form?.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = document.getElementById("email").value;
-      const formData = new FormData(form);
-      const payload = {
-        email,
-        list_id: formData.get("list_id") || 5,
-        source: formData.get("source") || "home"
-      };
+      const email = document.getElementById("email").value.trim();
+      if(!email){ msg.textContent = "❌ Please enter a valid email."; return; }
+      const payload = { email, list_id: 5, source: "home" };
       try{
         const res = await fetch("/api/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
-        const json = await res.json();
+        const json = await res.json().catch(()=>({ok:false}));
         if(json.ok){
+          msg.style.color = "var(--ok)";
           msg.textContent = "✅ Subscribed! Check your inbox.";
           form.reset();
         }else{
+          msg.style.color = "var(--danger)";
           msg.textContent = "❌ Subscription failed. Try again.";
         }
-      }catch(err){
+      }catch{
+        msg.style.color = "var(--danger)";
         msg.textContent = "❌ Network error. Please try again.";
       }
     });
+  </script>
+
+  <!-- Structured data: Organization + WebSite + ItemList (Featured) + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://earnbasis.com/#org",
+        "name":"EarnBasis",
+        "url":"https://earnbasis.com",
+        "logo":"https://earnbasis.com/images/earnbasis_logo.png"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://earnbasis.com/#website",
+        "url":"https://earnbasis.com",
+        "name":"EarnBasis",
+        "publisher":{"@id":"https://earnbasis.com/#org"},
+        "potentialAction":{
+          "@type":"SearchAction",
+          "target":"https://earnbasis.com/search?q={query}",
+          "query-input":"required name=query"
+        }
+      },
+      {
+        "@type":"ItemList",
+        "@id":"https://earnbasis.com/#featured",
+        "name":"Featured trading assets",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"url":"https://earnbasis.com/assets/011-forex-day-trading-playbook/"},
+          {"@type":"ListItem","position":2,"url":"https://earnbasis.com/assets/010-ai-tools-traders/"},
+          {"@type":"ListItem","position":3,"url":"https://earnbasis.com/assets/009-crypto-launch-sniper/"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"https://earnbasis.com/#faq",
+        "mainEntity":[
+          {"@type":"Question","name":"What’s included in the Lifetime Deal?","acceptedAnswer":{"@type":"Answer","text":"All current assets (including #011 Playbook) plus all future releases. Lifetime access, one payment."}},
+          {"@type":"Question","name":"Are assets beginner-friendly?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each asset is designed to be applied in ~15 minutes with clear steps and checklists."}},
+          {"@type":"Question","name":"Which markets are covered?","acceptedAnswer":{"@type":"Answer","text":"Forex and Gold primarily, with crypto-focused assets where they make sense."}},
+          {"@type":"Question","name":"Refunds?","acceptedAnswer":{"@type":"Answer","text":"Digital products. If something breaks or access fails, we’ll fix it fast."}}
+        ]
+      }
+    ]
+  }
   </script>
 </body>
 </html>

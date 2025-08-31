@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forex Position Sizing: Calculate It Right Every Time | EarnBasis Blog</title>
+  <meta name="description" content="Learn how to calculate Forex position size step by step. From risk % and stop-loss distance to lot size. Includes examples, mistakes to avoid, and a journal template. Linked to Asset 001: Forex Risk Management Cheat Sheet." />
+  <link rel="canonical" href="https://earnbasis.com/blogs/forex-position-sizing-pro" />
+  <meta property="og:title" content="Forex Position Sizing: Calculate It Right Every Time" />
+  <meta property="og:description" content="Step-by-step guide to Forex position sizing. Learn to risk properly, calculate lots, and avoid common mistakes." />
+  <meta property="og:image" content="https://earnbasis.com/images/blogs/001-position-sizing.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="icon" href="/images/favicon.ico" />
+  <style>
+    :root{--bg:#0b0d12;--text:#e9eefc;--muted:#9aa4c7;--card:#121520;--line:#1f2740;--brand1:#22d3ee;--brand2:#a78bfa;--brandtxt:#0b0d12;--accent:#60a5fa}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,Inter,Segoe UI,Roboto,Arial}
+    .wrap{max-width:920px;margin:0 auto;padding:28px 20px}
+    header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .logo{height:32px}
+    h1{font-size:32px;line-height:1.25;margin:10px 0 14px}
+    h2{margin-top:32px}
+    .lead{color:var(--muted);margin:0 0 18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:28px 0}
+    .btn{display:inline-block;font-weight:700;border-radius:10px;padding:12px 16px;background:linear-gradient(90deg,var(--brand1),var(--brand2));color:var(--brandtxt);text-decoration:none;margin-top:10px}
+    img{max-width:100%;border-radius:12px;border:1px solid #16213a;margin:22px 0}
+    code,pre{background:#0e1421;border:1px solid #1a2842;border-radius:8px;padding:10px;display:block;white-space:pre-wrap;margin:16px 0}
+    .note{color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="/images/earnbasis_logo.png" alt="EarnBasis logo" class="logo" />
+      <strong>EarnBasis Blog</strong>
+    </header>
+
+    <article>
+      <h1>Forex Position Sizing: Calculate It Right Every Time</h1>
+      <p class="lead">Ask any professional trader what kills accounts the fastest and you’ll hear the same answer: <strong>wrong position sizing</strong>. Here’s how to calculate it step by step, with examples, mistakes to avoid, and a practical template.</p>
+
+      <div class="card">
+        <strong>Want the shortcut?</strong>
+        <p class="note">Asset 001: <a href="/assets/001-forex-risk-management">Forex Risk Management Cheat Sheet</a> (€5) includes printable sizing tables and ready-made formulas.</p>
+        <a class="btn" href="/assets/001-forex-risk-management">👉 Get Asset 001</a>
+      </div>
+
+      <img src="/images/blogs/001-position-sizing.jpg" alt="Forex position sizing formula example with risk percent, stop-loss pips and lot size calculation" />
+
+      <h2>Why position sizing matters more than entries</h2>
+      <p>You can have the perfect strategy and still fail if you oversize. On the flip side, even a basic strategy works if you size properly. Many traders obsess over entries but forget that <em>lot size is the actual money risked</em>.</p>
+      <p>Funded account rules reflect this too: they don’t care about your win rate, they care about whether you breach daily or total drawdown limits. Correct sizing keeps you alive long enough to let your edge play out.</p>
+
+      <h2>Step 1 — Decide your risk %</h2>
+      <p>First, choose how much of your account you’re willing to risk per trade. Professional ranges: <strong>0.5–1%</strong>. Going higher makes drawdowns spiral quickly.</p>
+      <p><em>Example:</em> On a €10,000 account, 1% risk = €100 per trade.</p>
+
+      <h2>Step 2 — Measure stop-loss distance</h2>
+      <p>Your SL should be placed behind market structure, not at a random round number. Once you’ve set your SL, note the pip distance.</p>
+      <p><em>Example:</em> On EUR/USD, entry at 1.0750, SL at 1.0730 → 20 pips risk.</p>
+
+      <h2>Step 3 — Calculate lot size</h2>
+      <pre><code>Risk in money = Account × Risk%
+Lot size ≈ (Risk in money) ÷ (SL pips × Pip value)</code></pre>
+      <p><em>Example:</em> Account = €5,000, Risk% = 1% (€50), SL = 20 pips, Pip value = €0.90 →  
+      Lot size = €50 ÷ (20 × €0.90) = €50 ÷ €18 = <strong>0.28 lots</strong>.</p>
+
+      <h2>Step 4 — Apply an ATR sanity check</h2>
+      <p>If your SL is far smaller than the ATR (Average True Range), you’ll get stopped out by normal noise. Always compare SL distance to ATR before executing.</p>
+
+      <h2>Step 5 — Control multiple trades</h2>
+      <p>A common mistake is opening multiple trades and unknowingly stacking risk. If each trade risks 1% and you take 3 trades, your account is at 3% risk. That’s how accounts vanish.</p>
+      <p><strong>Rule:</strong> Keep <strong>total open risk ≤ 2%</strong>. Better to take one A+ setup than 3 random ones.</p>
+
+      <img src="/images/blogs/001-risk-chart.jpg" alt="Forex candlestick chart showing entry, stop-loss and take-profit levels" />
+
+      <h2>Common mistakes in position sizing</h2>
+      <ul>
+        <li><strong>Fixed lot trading:</strong> Always using 0.10 lots regardless of account size or SL. This ignores volatility and equity changes.</li>
+        <li><strong>Ignoring leverage:</strong> New traders max out leverage and forget that brokers still margin-call.</li>
+        <li><strong>Not adjusting for pair volatility:</strong> Gold and GBP/JPY move more aggressively than EUR/USD. Same pip distance ≠ same risk.</li>
+        <li><strong>Stacking trades without noticing total risk:</strong> Three 1% trades = 3% risk, which can break funded account rules fast.</li>
+      </ul>
+
+      <h2>Case study: The 10k funded account</h2>
+      <p>Trader A had a €10,000 funded account. They risked 2% per trade, took three trades at once, and lost them all. In a single session, the account dropped −6%, breaching the max drawdown. Account gone.</p>
+      <p>Trader B had the same setups but risked 0.5% per trade, max 2% total. After the same three losses, their account was only −1.5%. Still safe, still trading.</p>
+      <p><strong>Lesson:</strong> Position sizing is not just math—it’s survival.</p>
+
+      <h2>FAQ</h2>
+      <ul>
+        <li><strong>Do I use the same formula for gold?</strong> Yes, but pip values differ. Always check contract size.</li>
+        <li><strong>Is 0.5% too conservative?</strong> No. It’s often better, especially for prop firm rules or beginners.</li>
+        <li><strong>Should I round lot size?</strong> Yes, brokers often limit decimals. Round down for safety.</li>
+        <li><strong>Can I risk more after a winning streak?</strong> Dangerous. Stick to fixed % rules for consistency.</li>
+      </ul>
+
+      <div class="card">
+        <strong>Want the printable templates?</strong>
+        <p class="note">The Cheat Sheet includes full position sizing tables, ready-made calculators, and journal pages you can use instantly.</p>
+        <a class="btn" href="/assets/001-forex-risk-management">👉 Get Asset 001</a>
+      </div>
+
+      <p class="note">© EarnBasis — Blog article linked to Asset 001: Forex Risk Management</p>
+    </article>
+  </div>
+</body>
+</html>

@@ -3,38 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EarnBasis Drops – All Trading Assets</title>
-  <meta name="description" content="Browse every EarnBasis trading asset. Apply each one in 15 minutes: playbooks, cheat sheets, templates and tools for Forex, Gold and Crypto." />
+  <title>All Trading Assets (Drops) – Cheat Sheets, Playbooks & Templates | EarnBasis</title>
+  <meta name="description" content="Browse every EarnBasis trading asset: cheat sheets, playbooks, templates & tools for Forex, Gold and Crypto. Filter by market, strategy and price. Apply in ~15 minutes." />
+  <link rel="canonical" href="https://earnbasis.com/drops" />
   <meta name="robots" content="index,follow" />
   <link rel="icon" href="/images/favicon.ico" />
+  <meta property="og:title" content="EarnBasis Drops – All Trading Assets" />
+  <meta property="og:description" content="15-minute trading assets. Filter by Forex, Gold, Crypto, AI, Risk & Strategy. Lifetime Deal available." />
+  <meta property="og:image" content="https://earnbasis.com/images/forex-day-playbook.jpg" />
+  <meta property="og:url" content="https://earnbasis.com/drops" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     :root{
       --bg:#0b0d12; --text:#e9eefc; --muted:#9aa4c7;
       --card:#121520; --line:#1f2740;
       --brand1:#22d3ee; --brand2:#a78bfa; --brandtxt:#0b0d12;
+      --accent:#60a5fa; --ok:#2dd4bf;
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Inter,Segoe UI,Roboto,Arial}
     a{text-decoration:none;color:inherit}
-    .wrap{max-width:1080px;margin:0 auto;padding:28px 20px}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px 20px}
     header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
     .logo{height:36px}
-    h1{font-size:28px;margin:8px 0}
+    h1{font-size:30px;margin:8px 0}
     p.lead{color:var(--muted);margin:0 0 18px}
+    .toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:12px 0 18px}
+    .search{flex:1;min-width:240px;display:flex;gap:8px}
+    .search input{flex:1;background:#0c1322;border:1px solid #1e2a44;color:#e6f2ff;border-radius:10px;padding:12px}
+    .select, .chip{border:1px solid var(--line);background:#0e1220;border-radius:10px;padding:10px 12px}
+    .chip{cursor:pointer;color:#cfe}
+    .chip.active{outline:2px solid var(--accent)}
     .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
     @media (max-width:980px){ .grid{grid-template-columns:1fr} }
-    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column}
     .card h3{margin:0 0 6px 0;font-size:18px}
     .card p{margin:0;color:var(--muted)}
     .thumb{width:100%;border-radius:12px;border:1px solid #16213a;margin:10px 0}
     .btn{display:inline-flex;align-items:center;justify-content:center;font-weight:800;border-radius:10px;padding:12px 14px;background:linear-gradient(90deg,var(--brand1),var(--brand2));color:var(--brandtxt)}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:#b7c6e3;font-size:.9rem;margin-top:6px}
     .foot{border-top:1px solid var(--line);margin-top:28px;padding-top:22px}
     .row{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
     @media (max-width:980px){ .row{grid-template-columns:1fr} }
+    .badge{display:inline-block;background:#0b1423;border:1px solid #16263c;border-radius:8px;padding:6px 8px;color:#cfe;font-size:.85rem}
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap" itemscope itemtype="https://schema.org/CollectionPage">
     <header>
       <img class="logo" src="/images/earnbasis_logo.png" alt="EarnBasis" />
       <strong>EarnBasis Drops</strong>
@@ -43,97 +59,216 @@
     <h1>📦 All Drops — Instant-Use Trading Assets</h1>
     <p class="lead">Short, actionable and built for real charts. Apply any asset in ~15 minutes. New releases added frequently.</p>
 
-    <!-- ASSETS GRID -->
-    <div class="grid">
+    <!-- FILTERS / SEARCH -->
+    <div class="toolbar" role="region" aria-label="Filters and search">
+      <div class="search" role="search">
+        <input id="q" type="search" placeholder="Search assets (e.g., gold, breakout, AI, risk)..." aria-label="Search assets" />
+      </div>
+      <select id="sort" class="select" aria-label="Sort">
+        <option value="new">Sort: Newest</option>
+        <option value="price-asc">Sort: Price (Low → High)</option>
+        <option value="price-desc">Sort: Price (High → Low)</option>
+        <option value="az">Sort: A → Z</option>
+      </select>
+      <div class="chips" aria-label="Category filters">
+        <span class="chip" data-filter="all" aria-pressed="true">All</span>
+        <span class="chip" data-filter="forex">Forex</span>
+        <span class="chip" data-filter="gold">Gold</span>
+        <span class="chip" data-filter="crypto">Crypto</span>
+        <span class="chip" data-filter="ai">AI</span>
+        <span class="chip" data-filter="risk">Risk</span>
+        <span class="chip" data-filter="strategy">Strategy</span>
+      </div>
+    </div>
 
+    <!-- ASSETS GRID -->
+    <div id="grid" class="grid" itemscope itemtype="https://schema.org/ItemList">
       <!-- 011 -->
-      <article class="card">
-        <h3>#011 — Forex Day Trading Playbook (27 pages)</h3>
-        <p>Complete day trading guide: market structure, entries/exits, risk, psychology, routines & templates. <em>Intro €17 (reg. €27)</em>.</p>
-        <img class="thumb" src="/images/forex-day-playbook.jpg" alt="Asset 011 cover" />
-        <a class="btn" href="/assets/011-forex-day-trading-playbook/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="forex strategy risk"
+        data-price="17"
+        data-newest="1"
+      >
+        <h3 itemprop="headline">#011 — Forex Day Trading Playbook (27 pages)</h3>
+        <p itemprop="description">Complete day trading guide: structure, entries/exits, risk, psychology, routines & templates. <em>Intro €17 (reg. €27)</em>.</p>
+        <img class="thumb" src="/images/forex-day-playbook.jpg" alt="Asset 011 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Forex</span><span class="badge">Playbook</span><span class="badge">€17</span>
+        </div>
+        <a class="btn" href="/assets/011-forex-day-trading-playbook/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="1" />
       </article>
 
       <!-- 010 -->
-      <article class="card">
-        <h3>#010 — 7 AI Tools Every Trader Should Use</h3>
-        <p>Powerful free/cheap AI tools for traders: analysis, bots, auto-news, signal boosters. Includes affiliate resources.</p>
-        <img class="thumb" src="/images/010-ai-tools-traders.jpg" alt="Asset 010 cover" />
-        <a class="btn" href="/assets/010-ai-tools-traders/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="ai crypto strategy"
+        data-price="2"
+        data-newest="2"
+      >
+        <h3 itemprop="headline">#010 — 7 AI Tools Every Trader Should Use</h3>
+        <p itemprop="description">Free/cheap AI tools for traders (analysis, bots, auto-news, signal boosters). Includes affiliate resources.</p>
+        <img class="thumb" src="/images/010-ai-tools-traders.jpg" alt="Asset 010 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">AI</span><span class="badge">Tools</span><span class="badge">€2</span>
+        </div>
+        <a class="btn" href="/assets/010-ai-tools-traders/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="2" />
       </article>
 
       <!-- 009 -->
-      <article class="card">
-        <h3>#009 — Crypto Launch Sniper</h3>
-        <p>Catch new token launches early using Telegram, DEX tools and anti-scam checks. Fast, tactical, degen-friendly.</p>
-        <img class="thumb" src="/images/009-crypto-launch-sniper.jpg" alt="Asset 009 cover" />
-        <a class="btn" href="/assets/009-crypto-launch-sniper/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="crypto strategy"
+        data-price="5"
+        data-newest="3"
+      >
+        <h3 itemprop="headline">#009 — Crypto Launch Sniper</h3>
+        <p itemprop="description">Catch new token launches early using Telegram, DEX tools and anti-scam checks. Fast, tactical, degen-friendly.</p>
+        <img class="thumb" src="/images/009-crypto-launch-sniper.jpg" alt="Asset 009 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Crypto</span><span class="badge">Strategy</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/009-crypto-launch-sniper/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="3" />
       </article>
 
       <!-- 008 -->
-      <article class="card">
-        <h3>#008 — Forex Tariff Impact Strategies</h3>
-        <p>Trade tariff-driven volatility with clean frameworks for EUR/USD, USD/JPY and more.</p>
-        <img class="thumb" src="/images/008-forex-tariff.jpg" alt="Asset 008 cover" />
-        <a class="btn" href="/assets/008-forex-tariff-strategies/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="forex macro strategy"
+        data-price="2"
+        data-newest="4"
+      >
+        <h3 itemprop="headline">#008 — Forex Tariff Impact Strategies</h3>
+        <p itemprop="description">Trade tariff-driven volatility with clean frameworks for EUR/USD, USD/JPY and more.</p>
+        <img class="thumb" src="/images/008-forex-tariff.jpg" alt="Asset 008 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Forex</span><span class="badge">Macro</span><span class="badge">€2</span>
+        </div>
+        <a class="btn" href="/assets/008-forex-tariff-strategies/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="4" />
       </article>
 
       <!-- 007 -->
-      <article class="card">
-        <h3>#007 — Telegram Trading Bots</h3>
-        <p>Set up, monetize and scale Telegram bots for signals, alerts and VIP communities.</p>
-        <img class="thumb" src="/images/007-telegram-bot.jpg" alt="Asset 007 cover" />
-        <a class="btn" href="/assets/007-telegram-bots/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="crypto ai tools strategy"
+        data-price="5"
+        data-newest="5"
+      >
+        <h3 itemprop="headline">#007 — Telegram Trading Bots</h3>
+        <p itemprop="description">Set up, monetize and scale Telegram bots for signals, alerts and VIP communities.</p>
+        <img class="thumb" src="/images/007-telegram-bot.jpg" alt="Asset 007 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Crypto</span><span class="badge">Bots</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/007-telegram-bots/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="5" />
       </article>
 
       <!-- 006 -->
-      <article class="card">
-        <h3>#006 — Gold Day Trading Map</h3>
-        <p>Your intraday map for XAU/USD: sessions, zones, execution flow and risk planning.</p>
-        <img class="thumb" src="/images/gold-day-map.jpg" alt="Asset 006 cover" />
-        <a class="btn" href="/assets/006-gold-day-map/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="gold strategy"
+        data-price="5"
+        data-newest="6"
+      >
+        <h3 itemprop="headline">#006 — Gold Day Trading Map</h3>
+        <p itemprop="description">Your intraday map for XAU/USD: sessions, zones, execution flow and risk planning.</p>
+        <img class="thumb" src="/images/gold-day-map.jpg" alt="Asset 006 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Gold</span><span class="badge">Map</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/006-gold-day-map/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="6" />
       </article>
 
       <!-- 005 -->
-      <article class="card">
-        <h3>#005 — London Breakout Strategy</h3>
-        <p>Time-tested morning breakout with box rules, entry logic, SL/TP and session timing.</p>
-        <img class="thumb" src="/images/london-breakout.jpg" alt="Asset 005 cover" />
-        <a class="btn" href="/assets/005-london-breakout/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="forex strategy"
+        data-price="5"
+        data-newest="7"
+      >
+        <h3 itemprop="headline">#005 — London Breakout Strategy</h3>
+        <p itemprop="description">Time-tested morning breakout with box rules, entry logic, SL/TP and session timing.</p>
+        <img class="thumb" src="/images/london-breakout.jpg" alt="Asset 005 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Forex</span><span class="badge">Strategy</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/005-london-breakout/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="7" />
       </article>
 
       <!-- 004 -->
-      <article class="card">
-        <h3>#004 — ETH Yield Playbook</h3>
-        <p>Generate ETH yield via staking, pools and high-efficiency methods. No hype, just steps.</p>
-        <img class="thumb" src="/images/004-eth-yield.jpg" alt="Asset 004 cover" />
-        <a class="btn" href="/assets/004-eth-yield/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="crypto yield strategy"
+        data-price="2"
+        data-newest="8"
+      >
+        <h3 itemprop="headline">#004 — ETH Yield Farming</h3>
+        <p itemprop="description">Generate ETH yield via staking, lending and liquidity pools. Safer flows with clear steps.</p>
+        <img class="thumb" src="/images/004-eth-yield.jpg" alt="Asset 004 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Crypto</span><span class="badge">Yield</span><span class="badge">€2</span>
+        </div>
+        <a class="btn" href="/assets/004-ethereum-yield-farming/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="8" />
       </article>
 
       <!-- 003 -->
-      <article class="card">
-        <h3>#003 — BTC Scalping Strategy Pack</h3>
-        <p>Fast-paced Bitcoin scalps for high-volatility sessions. Clear entries, risk and targets.</p>
-        <img class="thumb" src="/images/003-btc-scalp.jpg" alt="Asset 003 cover" />
-        <a class="btn" href="/assets/003-btc-scalp/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="crypto strategy"
+        data-price="5"
+        data-newest="9"
+      >
+        <h3 itemprop="headline">#003 — BTC Scalping Strategy Pack</h3>
+        <p itemprop="description">Fast-paced Bitcoin scalps for high-volatility sessions. Clear entries, risk and targets.</p>
+        <img class="thumb" src="/images/003-btc-scalp.jpg" alt="Asset 003 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Crypto</span><span class="badge">Scalping</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/003-bitcoin-scalping/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="9" />
       </article>
 
       <!-- 002 -->
-      <article class="card">
-        <h3>#002 — AI-Powered Crypto Trading 2025</h3>
-        <p>AI prompts & workflows to discover, confirm and journal crypto trades. Practical, current.</p>
-        <img class="thumb" src="/images/002-ai-trading.jpg" alt="Asset 002 cover" />
-        <a class="btn" href="/assets/002-crypto-ai-trading/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="ai crypto"
+        data-price="5"
+        data-newest="10"
+      >
+        <h3 itemprop="headline">#002 — AI-Powered Crypto Trading</h3>
+        <p itemprop="description">AI prompts & workflows to discover, confirm and journal crypto trades. Practical, current.</p>
+        <img class="thumb" src="/images/002-ai-trading.jpg" alt="Asset 002 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">AI</span><span class="badge">Crypto</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/002-crypto-ai-trading/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="10" />
       </article>
 
       <!-- 001 -->
-      <article class="card">
-        <h3>#001 — Forex Risk Management Mastery</h3>
-        <p>Pro-level risk rules, position sizing and SL/TP logic. Templates and calculators included.</p>
-        <img class="thumb" src="/images/001-forex-risk.jpg" alt="Asset 001 cover" />
-        <a class="btn" href="/assets/001-forex-risk-management/">View Asset</a>
+      <article class="card"
+        itemscope itemtype="https://schema.org/CreativeWork"
+        data-tags="forex risk"
+        data-price="5"
+        data-newest="11"
+      >
+        <h3 itemprop="headline">#001 — Forex Risk Management</h3>
+        <p itemprop="description">Pro-level risk rules, position sizing and SL/TP logic. Templates and calculators included.</p>
+        <img class="thumb" src="/images/001-forex-risk.jpg" alt="Asset 001 cover" loading="lazy" width="320" height="200" />
+        <div class="meta">
+          <span class="badge">Risk</span><span class="badge">Forex</span><span class="badge">€5</span>
+        </div>
+        <a class="btn" href="/assets/001-forex-risk-management/" itemprop="url">View Asset</a>
+        <meta itemprop="position" content="11" />
       </article>
-
     </div>
 
     <!-- LTD & REFERRAL FOOTER -->
@@ -142,7 +277,7 @@
         <div class="card">
           <h2 style="margin:0 0 6px 0">🔓 Lifetime Deal — Best Value</h2>
           <p class="lead">Unlock all current assets (incl. premium #011 Playbook) + every future release. One payment. Lifetime updates.</p>
-          <a class="btn" href="/assets/000-ltd-access">💼 Get the Lifetime Deal</a>
+          <a class="btn" href="/assets/000-ltd-access/">💼 Get the Lifetime Deal</a>
         </div>
         <div class="card">
           <h2 style="margin:0 0 6px 0">💸 Earn by sharing</h2>
@@ -153,5 +288,97 @@
       <p style="color:var(--muted);margin-top:16px">© EarnBasis — Trading education assets. No financial advice. Results vary.</p>
     </div>
   </div>
+
+  <script>
+    // Simple client-side filtering/sorting
+    const q = document.getElementById('q');
+    const sort = document.getElementById('sort');
+    const chips = document.querySelectorAll('.chip');
+    const grid = document.getElementById('grid');
+    const cards = [...grid.querySelectorAll('.card')];
+    let activeFilter = 'all';
+
+    function applyFilters(){
+      const term = (q.value || '').toLowerCase().trim();
+      cards.forEach(card => {
+        const tags = card.dataset.tags || '';
+        const text = (card.querySelector('h3').textContent + ' ' + card.querySelector('p').textContent).toLowerCase();
+        const matchesText = !term || text.includes(term);
+        const matchesFilter = activeFilter === 'all' || tags.split(' ').includes(activeFilter);
+        card.style.display = (matchesText && matchesFilter) ? '' : 'none';
+      });
+      applySort();
+    }
+
+    function applySort(){
+      const visible = cards.filter(c => c.style.display !== 'none');
+      const by = sort.value;
+      const getPrice = el => parseFloat(el.dataset.price || '0');
+      const getAZ = el => el.querySelector('h3').textContent.trim().toLowerCase();
+      const getNew = el => parseInt(el.dataset.newest || '0', 10);
+
+      visible.sort((a,b)=>{
+        if(by === 'price-asc') return getPrice(a)-getPrice(b);
+        if(by === 'price-desc') return getPrice(b)-getPrice(a);
+        if(by === 'az') return getAZ(a) > getAZ(b) ? 1 : -1;
+        // default: newest first (higher = newer)
+        return getNew(b)-getNew(a);
+      });
+
+      // re-append in new order
+      visible.forEach(el => grid.appendChild(el));
+    }
+
+    q.addEventListener('input', applyFilters);
+    sort.addEventListener('change', applySort);
+    chips.forEach(ch => ch.addEventListener('click', ()=>{
+      chips.forEach(c=>c.classList.remove('active'));
+      ch.classList.add('active');
+      activeFilter = ch.dataset.filter;
+      applyFilters();
+    }));
+
+    // Init
+    document.querySelector('.chip[data-filter="all"]').classList.add('active');
+    applyFilters();
+  </script>
+
+  <!-- Structured data: Breadcrumbs + ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://earnbasis.com/"},
+          {"@type":"ListItem","position":2,"name":"Drops","item":"https://earnbasis.com/drops"}
+        ]
+      },
+      {
+        "@type":"ItemList",
+        "name":"EarnBasis Trading Assets",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"url":"https://earnbasis.com/assets/011-forex-day-trading-playbook/"},
+          {"@type":"ListItem","position":2,"url":"https://earnbasis.com/assets/010-ai-tools-traders/"},
+          {"@type":"ListItem","position":3,"url":"https://earnbasis.com/assets/009-crypto-launch-sniper/"},
+          {"@type":"ListItem","position":4,"url":"https://earnbasis.com/assets/008-forex-tariff-strategies/"},
+          {"@type":"ListItem","position":5,"url":"https://earnbasis.com/assets/007-telegram-bots/"},
+          {"@type":"ListItem","position":6,"url":"https://earnbasis.com/assets/006-gold-day-map/"},
+          {"@type":"ListItem","position":7,"url":"https://earnbasis.com/assets/005-london-breakout/"},
+          {"@type":"ListItem","position":8,"url":"https://earnbasis.com/assets/004-ethereum-yield-farming/"},
+          {"@type":"ListItem","position":9,"url":"https://earnbasis.com/assets/003-bitcoin-scalping/"},
+          {"@type":"ListItem","position":10,"url":"https://earnbasis.com/assets/002-crypto-ai-trading/"},
+          {"@type":"ListItem","position":11,"url":"https://earnbasis.com/assets/001-forex-risk-management/"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <noscript>
+    <style>.toolbar .chips { display:none }</style>
+    Your browser has JavaScript disabled. Use the search box above or browse assets below.
+  </noscript>
 </body>
 </html>
