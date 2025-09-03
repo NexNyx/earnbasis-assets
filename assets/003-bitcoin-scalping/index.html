@@ -7,69 +7,146 @@
   <meta name="description" content="Master Bitcoin scalping with this €5 cheat sheet. Learn 1–5 minute BTC scalp setups, entry rules, stop-loss & take-profit ratios, and risk management tips." />
   <link rel="canonical" href="https://earnbasis.com/assets/003-bitcoin-scalping" />
   <meta name="robots" content="index,follow" />
+
+  <!-- Structured data: Product -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Bitcoin Scalping Strategy (2025)",
+    "brand":{"@type":"Brand","name":"EarnBasis"},
+    "description":"A €5 cheat sheet for 1–5 minute BTC scalping: entries, SL/TP, RR and rules.",
+    "image":"https://earnbasis.com/images/003-btc-scalping.jpg",
+    "sku":"EB-003",
+    "url":"https://earnbasis.com/assets/003-bitcoin-scalping",
+    "offers":{
+      "@type":"Offer",
+      "price":"5.00",
+      "priceCurrency":"EUR",
+      "availability":"https://schema.org/InStock",
+      "url":"https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What is Bitcoin scalping?",
+        "acceptedAnswer":{"@type":"Answer","text":"A high-frequency method taking small, quick profits on BTC using 1–5 minute candles with strict risk controls."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does this work for other coins?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. The same framework applies to ETH and high-liquidity altcoins (SOL, XRP, LTC)."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can this help pass funded challenges?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. Tight SLs and fixed RR can fit most prop rules when you keep daily loss and max drawdown in check."}
+      }
+    ]
+  }
+  </script>
+
   <style>
-    body { margin: 0; padding: 24px; font-family: system-ui, sans-serif; background: #0b0d12; color: #e9eefc; }
-    h1 { font-size: 30px; margin-bottom: 14px; }
-    h2 { font-size: 22px; margin: 28px 0 12px; }
-    p { line-height: 1.7; font-size: 16px; max-width: 750px; }
-    ul { margin-top: 16px; padding-left: 20px; line-height: 1.7; }
-    .btn { display: inline-block; background: linear-gradient(90deg,#22d3ee,#a78bfa); color: #0b0d12; font-weight: bold; padding: 14px 24px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.4); margin: 16px 0; }
-    .section { margin-top: 40px; border-top: 1px solid #1f2740; padding-top: 30px; }
-    .note { color: #aeb9d7; font-size: 13px; margin-top: 40px; }
-    .logo { max-width: 160px; margin-bottom: 20px; }
+    :root { --ink:#e9eefc; --bg:#0b0d12; --muted:#aeb9d7; --line:#1f2740; }
+    body { margin:0; padding:24px; font-family:system-ui,sans-serif; background:var(--bg); color:var(--ink); }
+    h1 { font-size:30px; margin-bottom:14px; }
+    h2 { font-size:22px; margin:28px 0 12px; }
+    p { line-height:1.7; font-size:16px; max-width:780px; }
+    ul,ol { margin-top:16px; padding-left:20px; line-height:1.7; max-width:780px; }
+    .btn { display:inline-block; background:linear-gradient(90deg,#22d3ee,#a78bfa); color:#0b0d12; font-weight:700; padding:14px 24px; border-radius:10px; text-decoration:none; box-shadow:0 4px 14px rgba(0,0,0,.4); margin:16px 0; }
+    .section { margin-top:40px; border-top:1px solid var(--line); padding-top:30px; }
+    .note { color:var(--muted); font-size:13px; margin-top:40px; }
+    .logo { max-width:160px; margin-bottom:20px; }
+    .mockup { max-width:320px; width:100%; margin:20px 0; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,.5); }
+    .highlight { color:#fbbf24; font-weight:700; margin-top:10px; }
+    .tip { background:rgba(255,255,255,.04); border:1px solid var(--line); padding:14px; border-radius:10px; }
+    a.inline { color:#a6e3ff; text-decoration:underline; }
   </style>
 </head>
 <body>
   <article>
-    <img class="logo" src="/images/earnbasis_logo.png" alt="EarnBasis Bitcoin Scalping Strategy Cheat Sheet" />
+    <img class="logo" src="/images/earnbasis_logo.png" alt="EarnBasis logo" />
 
     <h1>⚡ Bitcoin Scalping Strategy Sheet (2025 Edition)</h1>
     <p>
-      Scalping Bitcoin on the <strong>1–5 minute timeframe</strong> can be highly profitable — if you follow strict rules.  
-      This cheat sheet gives you a clear, step-by-step framework for <em>BTC scalping entries, stop-loss placement, and take-profit exits</em>.  
+      Scalping Bitcoin on the <strong>1–5 minute timeframe</strong> can be highly profitable — if you follow strict rules.
+      This cheat sheet gives you a clear, step-by-step framework for <em>BTC scalping entries, stop-loss placement, and take-profit exits</em>.
       Print it. Trade it. Profit.
     </p>
+
+    <!-- PDF cover/mockup -->
+    <img class="mockup" src="/images/003-btc-scalping.jpg" alt="Bitcoin Scalping Strategy PDF cover mockup" />
 
     <ul>
       <li>✅ Proven BTC scalping criteria & price patterns</li>
       <li>📏 Stop-loss / take-profit ratios that protect your capital</li>
-      <li>⏱️ Timing rules: when NOT to enter (the #1 killer of scalp trades)</li>
+      <li>⏱️ Timing rules: when NOT to enter (the #1 killer of scalps)</li>
       <li>⚡ Applies to Bitcoin, Ethereum, and high-volume altcoins</li>
     </ul>
 
-    <a class="btn" href="https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8" target="_blank">💸 Buy Now – Only €5</a>
+    <p class="highlight">🔥 Early price: €5 (increases with new editions)</p>
+    <a class="btn" href="https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8" target="_blank" rel="nofollow noopener">💸 Buy Now – Only €5</a>
 
     <h2>Why Bitcoin Scalping Works</h2>
     <p>
-      Scalping is one of the fastest ways to grow a small account.  
-      By targeting <strong>small price moves with high frequency</strong>, traders can compound profits without waiting for long swing setups.  
-      However, without strict risk management, scalpers often get wiped out. This PDF gives you the discipline needed to stay consistent.
+      Scalping targets <strong>small moves with repeatable confluence</strong>. You compound faster by staying mechanical:
+      fixed invalidation, fixed RR, and session-based timing. The sheet helps you enforce rules so speed doesn’t turn into chaos.
     </p>
 
     <h2>Inside the Scalping Cheat Sheet</h2>
-    <p>
-      In this PDF you’ll learn:  
-    </p>
     <ul>
-      <li>📉 How to identify BTC scalp setups during London & New York sessions</li>
-      <li>📊 Exact formulas for position sizing on small timeframes</li>
-      <li>🛡️ Risk management rules to protect against overtrading</li>
-      <li>📒 A journaling template to review scalp trades</li>
+      <li class="tip">🎯 <strong>Entry checklist:</strong> structure break, liquidity sweep, trigger candle, session filter</li>
+      <li class="tip">🛡️ <strong>Risk framework:</strong> fixed % risk, SL logic by structure/ATR, partials at TP1/TP2</li>
+      <li class="tip">📊 <strong>RR discipline:</strong> minimum 1:2; when to skip sub-par RR even if signal looks “good”</li>
+      <li class="tip">🧾 <strong>Journaling template:</strong> pre/post trade notes for rapid feedback loops</li>
+    </ul>
+
+    <h2>Example: Micro Position Sizing</h2>
+    <p>
+      Account €2,000 · Risk 1% = €20 · SL = 50 dollars on BTC (per contract equivalent).
+      To keep RR ≥ 1:2, target €40 profit at TP1. Sheet includes <strong>step-by-step lot/size math</strong> for common brokers.
+    </p>
+
+    <h2>Session & Timing Rules (1–5M)</h2>
+    <ul>
+      <li><strong>Trade windows:</strong> last 30m pre-London → first 120m London; last 30m pre-NY → first 120m NY.</li>
+      <li><strong>Avoid:</strong> 5–10m around major news; lunch hours; choppy overlapping EMAs with low volume.</li>
+      <li><strong>Spread/fees filter:</strong> skip if spread > 30% of SL size.</li>
+    </ul>
+
+    <h2>Common Mistakes (and Fixes)</h2>
+    <ul>
+      <li><strong>Chasing after impulse:</strong> wait for retrace to prior level or trigger candle.</li>
+      <li><strong>Moving SL “just this once”:</strong> never. Reduce size instead; keep invalidation sacred.</li>
+      <li><strong>Overtrading:</strong> daily cap = 2 losses or 3 wins, then stop.</li>
     </ul>
 
     <h2>Who Is This For?</h2>
     <p>
-      – Day traders looking for high-frequency strategies  
-      – Funded account traders who must control risk tightly  
-      – Beginners learning BTC scalping basics  
-      – Experienced traders wanting a structured 1–5M strategy  
+      – Day traders looking for high-frequency strategies<br />
+      – Funded account traders who must control risk tightly<br />
+      – Beginners learning BTC scalping basics<br />
+      – Experienced traders wanting a structured 1–5M playbook
+    </p>
+
+    <p>
+      Pair this with the <a class="inline" href="/assets/001-forex-risk-management/">Forex Risk Management Sheet</a> for hard risk limits,
+      and the <a class="inline" href="/assets/002-crypto-ai-trading/">AI Crypto Prompt Sheet</a> to systemize scan → confirm → journal.
     </p>
 
     <div class="section">
       <h2>🔐 Upgrade: Lifetime Vault Access</h2>
       <p>
-        Unlock this PDF plus <strong>every future scalping, swing, and AI trading guide</strong> inside the EarnBasis Vault.  
-        Pay once, access forever. 700+ assets projected.  
+        Unlock this PDF plus <strong>every future scalping, swing, and AI trading guide</strong> inside the EarnBasis Vault.
+        Pay once, access forever. Hundreds of assets projected.
       </p>
       <p><a class="btn" href="/assets/000-ltd-access/">🔓 Learn About Vault Access</a></p>
     </div>
@@ -77,8 +154,7 @@
     <div class="section">
       <h2>👥 Refer Traders. Earn Free Assets.</h2>
       <p>
-        Invite your friends. Every 3 referrals = 1 free asset unlocked.  
-        Share knowledge, get rewarded.  
+        Invite friends. Every 3 referrals = 1 free asset unlocked. Share knowledge, get rewarded.
       </p>
       <p><a class="btn" href="/invite">📨 Start Referring</a></p>
     </div>
@@ -88,13 +164,16 @@
     ✅ A high-frequency trading method where you take small, fast profits on BTC within 1–5 minute candles.</p>
 
     <p><strong>❓ How much can you make scalping BTC?</strong><br>
-    ✅ Depends on account size & discipline. With 1–2% risk per trade, scalpers can compound profits quickly — if they follow rules.</p>
+    ✅ Depends on account size & discipline. With 1–2% risk per trade, scalpers can compound faster — if they follow rules.</p>
 
     <p><strong>❓ Does this work for other coins?</strong><br>
     ✅ Yes. The same rules apply to ETH and liquid altcoins like SOL, XRP, and LTC.</p>
 
     <p><strong>❓ Can this help pass a funded account challenge?</strong><br>
-    ✅ Absolutely. Scalping with strict stop-losses can fit most prop firm rules if applied with discipline.</p>
+    ✅ Absolutely. Tight SLs and fixed RR can fit prop rules when applied with discipline.</p>
+
+    <!-- Extra CTA bottom -->
+    <a class="btn" href="https://www.paypal.com/ncp/payment/8RXWKJB9ZKNP8" target="_blank" rel="nofollow noopener">💸 Get the Scalping Sheet Now</a>
 
     <p class="note">© EarnBasis — Asset 003: Bitcoin Scalping Strategy (2025)</p>
   </article>

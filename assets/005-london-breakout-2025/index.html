@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://earnbasis.com/assets/005-london-breakout" />
   <meta name="robots" content="index,follow" />
 
-  <!-- Social preview (helps CTR when shared) -->
+  <!-- Social preview -->
   <meta property="og:title" content="London Breakout Strategy (2025) – Rules, Timing & Checklist" />
   <meta property="og:description" content="Exact timing window, entry/SL/TP rules, fakeout filter, and a pre-trade checklist. €5 strategy PDF." />
   <meta property="og:type" content="article" />
@@ -16,18 +16,73 @@
   <meta property="og:image" content="https://earnbasis.com/images/005-london-breakout-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Structured data: Product -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"London Breakout Strategy (2025)",
+    "brand":{"@type":"Brand","name":"EarnBasis"},
+    "description":"Rules, timing, fakeout filter and checklist for trading the London Breakout. €5 strategy PDF.",
+    "image":"https://earnbasis.com/images/005-london-breakout-cover.jpg",
+    "sku":"EB-005",
+    "url":"https://earnbasis.com/assets/005-london-breakout",
+    "offers":{
+      "@type":"Offer",
+      "price":"5.00",
+      "priceCurrency":"EUR",
+      "availability":"https://schema.org/InStock",
+      "url":"https://www.paypal.com/ncp/payment/95V29MYYYZ3L6"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What time is the London Breakout?",
+        "acceptedAnswer":{"@type":"Answer","text":"The actionable window centers around the London market open. Use a buffer and confirm breaks with volume/momentum to avoid whipsaws."}
+      },
+      {
+        "@type":"Question",
+        "name":"Which pairs work best?",
+        "acceptedAnswer":{"@type":"Answer","text":"EUR/USD, GBP/USD and XAU/USD usually provide clean moves due to London liquidity."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does this strategy work for funded challenges?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes, provided you enforce strict risk limits, respect max daily loss and skip marginal conditions."}
+      },
+      {
+        "@type":"Question",
+        "name":"Do I need indicators?",
+        "acceptedAnswer":{"@type":"Answer","text":"No. The core method is price & session based. Optional filters include volume or momentum to reduce fakeouts."}
+      }
+    ]
+  }
+  </script>
+
   <style>
-    body { margin: 0; padding: 24px; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #0b0d12; color: #e9eefc; }
-    h1 { font-size: 30px; margin-bottom: 12px; }
-    h2 { font-size: 22px; margin: 28px 0 12px; }
-    p  { line-height: 1.7; font-size: 16px; max-width: 780px; }
-    ul { margin-top: 12px; padding-left: 20px; line-height: 1.7; max-width: 780px; }
-    .btn { display: inline-block; background: linear-gradient(90deg,#22d3ee,#a78bfa); color: #0b0d12; font-weight: bold; padding: 14px 24px; border-radius: 10px; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.4); margin: 16px 0; }
-    .section { margin-top: 40px; border-top: 1px solid #1f2740; padding-top: 30px; }
-    .note { color: #aeb9d7; font-size: 13px; margin-top: 40px; }
-    .logo { max-width: 160px; margin-bottom: 20px; }
-    .cover { max-width: 820px; width: 100%; border-radius: 12px; box-shadow: 0 4px 14px rgba(0,0,0,0.35); margin: 0 0 20px 0; }
-    a.inline { color: #9ad1ff; text-decoration: underline; }
+    :root { --ink:#e9eefc; --bg:#0b0d12; --muted:#aeb9d7; --line:#1f2740; }
+    body { margin:0; padding:24px; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+    h1 { font-size:30px; margin-bottom:12px; }
+    h2 { font-size:22px; margin:28px 0 12px; }
+    p  { line-height:1.7; font-size:16px; max-width:780px; }
+    ul,ol { margin-top:12px; padding-left:20px; line-height:1.7; max-width:780px; }
+    .btn { display:inline-block; background:linear-gradient(90deg,#22d3ee,#a78bfa); color:#0b0d12; font-weight:700; padding:14px 24px; border-radius:10px; text-decoration:none; box-shadow:0 4px 14px rgba(0,0,0,.4); margin:16px 0; }
+    .section { margin-top:40px; border-top:1px solid var(--line); padding-top:30px; }
+    .note { color:var(--muted); font-size:13px; margin-top:40px; }
+    .logo { max-width:160px; margin-bottom:20px; }
+    .cover { max-width:820px; width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,.35); margin:0 0 20px 0; }
+    .highlight { color:#fbbf24; font-weight:700; margin-top:6px; }
+    a.inline { color:#9ad1ff; text-decoration:underline; }
+    .tip { background:rgba(255,255,255,.04); border:1px solid var(--line); padding:14px; border-radius:10px; }
+    .grid { display:grid; gap:12px; max-width:780px; }
   </style>
 </head>
 <body>
@@ -37,7 +92,7 @@
 
     <h1>💥 London Breakout Strategy (2025): Catch the First Clean Move</h1>
     <p>
-      The <strong>London Breakout</strong> is one of Forex’s most reliable intraday setups—if you respect timing, structure, and risk.  
+      The <strong>London Breakout</strong> is one of Forex’s most reliable intraday setups—if you respect timing, structure, and risk.
       This €5 PDF distills the <em>exact window</em> to trade, <em>entry/SL/TP rules</em>, and a <em>fakeout filter</em> so you can execute with confidence during the most liquid session of the day.
     </p>
 
@@ -48,29 +103,51 @@
       <li>📒 Journaling template to review and improve consistency</li>
     </ul>
 
-    <a class="btn" href="https://www.paypal.com/ncp/payment/95V29MYYYZ3L6" target="_blank">💸 Buy Now – Only €5</a>
+    <p class="highlight">🔥 Early price: €5 (may increase with new editions)</p>
+    <a class="btn" href="https://www.paypal.com/ncp/payment/95V29MYYYZ3L6" target="_blank" rel="nofollow noopener">💸 Buy Now – Only €5</a>
 
     <h2>Why the London Breakout Works</h2>
     <p>
-      Liquidity concentrates when the European session opens, often releasing the range built during Asia.  
-      By defining a <strong>pre-London range</strong> and trading the <em>break with confirmation</em>, you can capture directional moves with tight risk.  
-      The PDF shows how to avoid low-quality breaks (news spikes, low range conditions) and when to stand aside.
+      Liquidity concentrates when the European session opens, often releasing the range built during Asia.
+      By defining a <strong>pre-London range</strong> and trading the <em>break with confirmation</em>, you can capture directional moves with tight risk.
+      The PDF shows how to avoid low-quality breaks (news spikes, narrow ranges) and when to stand aside.
     </p>
+
+    <h2>Timing Window (with Buffers)</h2>
+    <ul class="grid">
+      <li class="tip"><strong>Build the Box:</strong> Use the Asian session high/low or a fixed pre-London window ending shortly before London open.</li>
+      <li class="tip"><strong>Primary window:</strong> From a few minutes before the open to ~90–120 minutes after, provided structure confirms.</li>
+      <li class="tip"><strong>Avoid:</strong> Major news minutes, ultra-narrow Asian ranges, or directionless chop around previous day’s close.</li>
+    </ul>
 
     <h2>Strategy Rules (Overview)</h2>
     <ul>
-      <li><strong>Define the Box:</strong> Mark the Asian session high/low (or a fixed pre-London window) on your pair (EUR/USD, GBP/USD, XAU/USD).</li>
-      <li><strong>Trigger:</strong> Wait for a clean break + close beyond the box. Confirm with volume or momentum (per your platform).</li>
-      <li><strong>Entry:</strong> Enter on the first pullback or continuation after confirmation—avoid chasing wicks.</li>
-      <li><strong>Stop-Loss:</strong> Beyond the opposite side of the box or last swing; respect a max risk % per trade.</li>
-      <li><strong>Take-Profit:</strong> TP1 = box size, TP2 = 1.5–2× box size; trail remainder only if structure stays intact.</li>
-      <li><strong>No-Trade Conditions:</strong> Extreme news minutes away, narrow Asian range, chop around previous day’s close.</li>
+      <li><strong>Define the Box:</strong> Mark Asian high/low on EUR/USD, GBP/USD, or XAU/USD.</li>
+      <li><strong>Trigger:</strong> Close outside the box + confirmation (momentum or volume).</li>
+      <li><strong>Entry:</strong> First pullback/continuation after confirmation—don’t chase wicks.</li>
+      <li><strong>Stop-Loss:</strong> Beyond opposite box edge or last swing; fixed % risk per trade.</li>
+      <li><strong>Take-Profit:</strong> TP1 = box size; TP2 = 1.5–2× box; trail remainder only while structure stays intact.</li>
+      <li><strong>Daily Rules:</strong> 2 losses or 3 wins → stop for the day.</li>
+    </ul>
+
+    <h2>Box-Size Example (RR Math)</h2>
+    <p>
+      If the Asian range is <strong>20 pips</strong> and your SL sits just beyond the opposite edge (~22–25 pips with buffer),
+      then TP1 = 20 pips, TP2 = 30–40 pips. With 1% risk per trade and RR ≥ 1:1 to TP1 and ≥ 1:1.5–2 to TP2,
+      a single clean breakout can cover the day’s target. The PDF includes exact position-size steps.
+    </p>
+
+    <h2>Fakeout Filter (Keep the Bad Trades Out)</h2>
+    <ul>
+      <li><strong>1-minute spike only:</strong> ignore. Wait for body close beyond the box on your execution TF (5–15m).</li>
+      <li><strong>Immediate snap-back:</strong> require a retest that holds, or skip.</li>
+      <li><strong>Spread test:</strong> skip if spread >30% of SL size (common around news).</li>
     </ul>
 
     <h2>Pairs & Sessions</h2>
     <p>
-      Works best on <strong>EUR/USD</strong>, <strong>GBP/USD</strong>, and <strong>XAU/USD (Gold)</strong> due to London liquidity.  
-      Timeframes: <strong>5–15m</strong> for execution; 1H for context. The PDF includes time-zone tips and a session checklist.
+      Works best on <strong>EUR/USD</strong>, <strong>GBP/USD</strong>, and <strong>XAU/USD (Gold)</strong> due to London liquidity.
+      Execution on <strong>5–15m</strong>; use 1H for context. The PDF includes time-zone tips and a session checklist.
     </p>
 
     <h2>Who This Is For</h2>
@@ -93,7 +170,7 @@
     <div class="section">
       <h2>🔐 Upgrade: Lifetime Vault Access</h2>
       <p>
-        Get this strategy plus <strong>all future EarnBasis drops</strong> (Forex, crypto, AI, strategy maps) for a one-time fee.  
+        Get this strategy plus <strong>all future EarnBasis drops</strong> (Forex, crypto, AI, strategy maps) for a one-time fee.
         No subscriptions. Lifetime updates.
       </p>
       <p><a class="btn" href="/assets/000-ltd-access/">🔓 Learn About Vault Access</a></p>
@@ -120,37 +197,10 @@
     <p><strong>❓ Do I need indicators?</strong><br/>
     ✅ No, but volume/momentum confirmation can help filter fakeouts. The PDF outlines optional confirmations.</p>
 
-    <p class="note">© EarnBasis — Asset 005: London Breakout Strategy (2025)</p>
-  </article>
+    <!-- Extra CTA for scroll-enders -->
+    <a class="btn" href="https://www.paypal.com/ncp/payment/95V29MYYYZ3L6" target="_blank" rel="nofollow noopener">💸 Get the London Breakout PDF</a>
 
-  <!-- Optional: FAQ schema for rich results -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"What time is the London Breakout?",
-        "acceptedAnswer":{"@type":"Answer","text":"The actionable window centers around the London market open. Use a small buffer and confirm breaks with your rules to avoid whipsaws."}
-      },
-      {
-        "@type":"Question",
-        "name":"Which pairs work best?",
-        "acceptedAnswer":{"@type":"Answer","text":"EUR/USD, GBP/USD, and XAU/USD typically offer clean moves at London open due to liquidity."}
-      },
-      {
-        "@type":"Question",
-        "name":"Does this work for funded challenges?",
-        "acceptedAnswer":{"@type":"Answer","text":"Yes—if you apply strict risk limits, respect max daily loss, and skip marginal conditions."}
-      },
-      {
-        "@type":"Question",
-        "name":"Do I need indicators?",
-        "acceptedAnswer":{"@type":"Answer","text":"No, but volume/momentum confirmation can help filter fakeouts. The PDF outlines optional confirmations."}
-      }
-    ]
-  }
-  </script>
+    <p class="note">© EarnBasis — Asset 005: London Breakout Strategy (2025). Educational content, not financial advice.</p>
+  </article>
 </body>
 </html>

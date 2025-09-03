@@ -1,20 +1,69 @@
-# Ignore macOS systeemfiles
-.DS_Store
+# =========================
+# OS & SYSTEEMBESTANDEN
+# =========================
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
 
-# Ignore Windows thumbnail cache
-Thumbs.db
-
-# Ignore log files
-*.log
-
-# Ignore local backups or temporary files
+# =========================
+# LOGS & TEMP
+# =========================
+**/*.log
+**/*.tmp
+**/*.temp
 *~
 *.bak
+*.swp
+*.swo
 
-# Ignore sensitive files (bijv. API keys of credentials)
-*.env
+# =========================
+# GEVOELIGE BESTANDEN
+# =========================
+.env
+.env.*
+.env.local
+*.key
+*.pem
 
-# Ignore build artifacts (als je later een build-stap toevoegt)
+# =========================
+# BUILD / OUTPUT
+# =========================
 dist/
 build/
+.out/
+.cache/
+.replacements.txt
+
+# =========================
+# PACKAGE MANAGERS (optioneel: laat staan als je ooit tooling toevoegt)
+# =========================
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# =========================
+# TEST / COVERAGE (optioneel)
+# =========================
+coverage/
+.junit/
+
+# =========================
+# EDITOR / IDE
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# PROJECT-SPECIFIEK
+# =========================
+# Concept-bronnen voor PDF (niet indexeren, niet committen)
+pdf-source/
+
+# Download/kooptoegang; vaak niet in Git (uitgezet standaard).
+# Haal het hekje weg als je deze map NIET wil committen.
+# access/
+
+# Eventuele lokale vervangingslijsten/scrap-scripts
 replacements.txt
